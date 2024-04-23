@@ -1,0 +1,11 @@
+﻿l_english:
+ # Initial setup event
+ mdchaos.1.t: "Millennium Dawn: Chaos mod setup"
+ mdchaos.1.desc: "Configure the chaos from here :D"
+ mdchaos.1.a: "Time between Chaos events"
+
+ # Time between chaos events
+ mdchaos.2.t: "Time between Chaos events"
+ mdchaos.2.d: "Choose the time you'd like between the chaos events."
+ mdchaos.2.a: "30 Days"
+ mdchaos.2.b: "72 Days"

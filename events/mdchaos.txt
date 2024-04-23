@@ -1,0 +1,32 @@
+add_namespace = mdchaos
+
+country_event = {
+    id = mdchaos.1
+    title = mdchaos.1.t
+    desc = mdchaos.1.desc
+    
+	is_triggered_only = yes
+    
+    option = {
+        name = mdchaos.1.a
+        country_event = mdchaos.2
+    }
+}
+
+country_event = {
+	id = mdchaos.2
+	title = mdchaos.2.t
+	desc = mdchaos.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos.2.a
+		set_variable = { mdchaos_time = 30 }
+	}
+
+	option = {
+		name = mdchaos.2.b
+		set_variable = { mdchaos_time = 72 }
+	}
+}
