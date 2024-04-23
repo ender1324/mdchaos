@@ -1,0 +1,14 @@
+mdchaos_category = {
+	mdchaos_incoming = {
+		available = {
+			is_ai = yes
+		}
+		is_good = no
+		days_mission_timeout = mdchaos_time
+
+		timeout_effect = {
+			country_event = mdchaos.1
+			activate_mission = mdchaos_incoming
+		}
+	}
+}

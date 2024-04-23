@@ -1,6 +1,7 @@
 on_actions = {
     on_startup = {
         effect = {
+            set_variable = { mdchaos_time = 30 }
             random_country = {
                 limit = { is_ai = no }
                 country_event = mdchaos.1

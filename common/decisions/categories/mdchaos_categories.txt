@@ -1,0 +1,6 @@
+mdchaos_category = {
+	allowed = { is_ai = no }
+	visible = { always = yes }
+	visible_when_empty = yes
+	priority = 1000
+}

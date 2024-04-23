@@ -11,6 +11,10 @@ country_event = {
         name = mdchaos.1.a
         country_event = mdchaos.2
     }
+	option = {
+        name = mdchaos.1.b
+		activate_mission = mdchaos_incoming
+    }
 }
 
 country_event = {
@@ -23,10 +27,21 @@ country_event = {
 	option = {
 		name = mdchaos.2.a
 		set_variable = { mdchaos_time = 30 }
+		remove_mission = mdchaos_incoming
+		country_event = mdchaos.1
 	}
 
 	option = {
 		name = mdchaos.2.b
 		set_variable = { mdchaos_time = 72 }
+		remove_mission = mdchaos_incoming
+		country_event = mdchaos.1
+	}
+
+	option = {
+		name = mdchaos.2.c
+		set_variable = { mdchaos_time = 14 }
+		remove_mission = mdchaos_incoming
+		country_event = mdchaos.1
 	}
 }
