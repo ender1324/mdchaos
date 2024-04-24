@@ -1,0 +1,357 @@
+add_namespace = mdchaos_harmless
+
+# Religion Change event
+country_event = {
+	id = mdchaos_harmless.1
+	title = mdchaos_harmless.1.title
+	desc = mdchaos_harmless.1.desc
+	picture = GFX_rogan
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.1.a
+		random_list = {
+			1 = {
+				add_ideas = sunni
+			}
+			1 = {
+				add_ideas = shia
+			}
+			1 = {
+				add_ideas = sufi_islam
+			}
+			1 = {
+				add_ideas = ibadi
+			}
+			1 = {
+				add_ideas = christian
+			}
+			1 = {
+				add_ideas = orthodox_christian
+			}
+			1 = {
+				add_ideas = pluralist
+			}
+			1 = {
+				add_ideas = buddhist
+			}
+			1 = {
+				add_ideas = hindu
+			}
+			1 = {
+				add_ideas = judaism
+			}
+			1 = {
+				add_ideas = shinto
+			}
+			1 = {
+				add_ideas = cheondo
+			}
+			1 = {
+				add_ideas = uniate_church
+			}
+			1 = {
+				add_ideas = zoroastrian
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_harmless.1.b
+		add_political_power = -100
+	}
+}
+
+# The USA President invites your country leader to gamble
+country_event = {
+	id = mdchaos_harmless.2
+	title = mdchaos_harmless.2.title
+	desc = mdchaos_harmless.2.desc
+	picture = GFX_george_w_bush
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.2.a
+		USA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = pro_american
+			}
+		}
+		set_temp_variable = { treasury_change = -10.00 }
+		modify_treasury_effect = yes
+		random_list = {
+			50 = {
+				set_temp_variable = { treasury_change = 250.00 }
+				modify_treasury_effect = yes
+			}
+			50 = {
+				set_temp_variable = { treasury_change = -500.00 }
+				modify_treasury_effect = yes
+			}
+		}
+	}
+	option = {
+		name = mdchaos_harmless.2.b
+		USA = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = imminent_danger_to_national_security
+			}
+			send_embargo = ROOT
+		}
+	}
+}
+
+# Russian president offers to take over all our debt
+country_event = {
+	id = mdchaos_harmless.3
+	title = mdchaos_harmless.3.title
+	desc = mdchaos_harmless.3.desc
+	picture = GFX_declare_svo
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.3.a
+		set_variable = { debt = 0.00 }
+		custom_effect_tooltip = mdchaos_harmless.3.a_tt
+		set_temp_variable = { percent_change = 40 }
+		set_temp_variable = { tag_index = SOV }
+		set_temp_variable = { influence_target = ROOT }
+		change_influence_percentage = yes
+		add_opinion_modifier = {
+			target = SOV
+			modifier = supports_us
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.4
+		}
+	}
+	option = {
+		name = mdchaos_harmless.3.b
+		add_stability = -0.2
+		add_war_support = 0.2
+		set_temp_variable = { treasury_change = -1000.00 }
+		modify_treasury_effect = yes
+		set_technology = {
+			ICBM = 1
+			ICBM1 = 1
+			ICBM2 = 1
+			ICBM3 = 1
+			ICBM4 = 1
+			ICBM5 = 1
+			nuclear_warhead_0 = 1
+			nuclear_warhead_1 = 1
+			nuclear_warhead_2 = 1
+			nuclear_warhead_3 = 1
+			nuclear_warhead_4 = 1
+			nuclear_warhead_5 = 1
+			nuclear_warhead_6 = 1
+			nuclear_warhead_7 = 1
+			nuclear_warhead_8 = 1
+			nuclear_warhead_9 = 1
+			nuclear_warhead_10 = 1
+		}
+		add_to_variable = { nuclear_warhead_inventory_array^9 = 100 }
+		add_to_array = { nuclear_doctrine_array = 6 }
+		add_to_array = { nuclear_status_array = 3 }
+		add_to_array = { nuclear_status_array = 9 }
+		set_nuclear_status_special_effect = yes
+		set_nuke_arrays_selected_TAG = yes
+		update_nuclear_deterrence = yes
+		set_temp_variable = { missile_type = 1 }
+		set_temp_variable = { missile_index = 15 }
+		set_temp_variable = { missile_count = 100 }
+		modify_missile_inventory_count = yes
+		set_temp_variable = { percent_change = 10 }
+		set_temp_variable = { tag_index = SOV }
+		set_temp_variable = { influence_target = ROOT }
+		change_influence_percentage = yes
+		capital_scope = {
+			set_building_level = {
+				type = missile_silo
+				level = 2
+				instant_build = yes
+			}
+		}
+		custom_effect_tooltip = mdchaos_harmless.3.b_tt
+	}
+	option = {
+		name = mdchaos_harmless.3.c
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = imminent_danger_to_national_security
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.4
+	title = mdchaos_harmless.4.title
+	desc = mdchaos_harmless.4.desc
+	picture = GFX_kanye
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.4.a
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.2
+		}
+		ISR = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = imminent_danger_to_national_security
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.5
+	title = mdchaos_harmless.5.title
+	desc = mdchaos_harmless.5.desc
+	picture = GFX_internal_faction_business_purchase
+	
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.5.a
+		random_controlled_state = {
+			add_building_construction = {
+				type = fossil_powerplant
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = nuclear_reactor
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 2
+				instant_build = yes
+			}
+		}
+		set_temp_variable = { temp_opinion = 5 }
+		change_industrial_conglomerates_opinion = yes
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.6
+	title = mdchaos_harmless.6.title
+	desc = mdchaos_harmless.6.desc
+	picture = GFX_us_flag
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.6.a
+		set_temp_variable = { percent_change = 10 }
+		change_domestic_influence_percentage = yes
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.7
+	title = mdchaos_harmless.7.title
+	desc = mdchaos_harmless.7.desc
+
+	picture = GFX_prigozin
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.7.a
+		add_stability = -0.05
+		kill_country_leader = yes
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.8
+	title = mdchaos_harmless.8.title
+	desc = mdchaos_harmless.8.desc
+
+	picture = GFX_mrbeast
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.8.a
+		increase_economic_growth = yes
+	}
+
+	option = {
+		name = mdchaos_harmless.8.b
+		USA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = imminent_danger_to_national_security
+			}
+			send_embargo = ROOT
+		}
+		set_temp_variable = { treasury_change = 150.00 }
+		modify_treasury_effect = yes
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.9
+	title = mdchaos_harmless.9.title
+	desc = mdchaos_harmless.9.desc
+	picture = GFX_freddy
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.9.a
+		every_army_leader = {
+			add_attack = 1
+		}
+	}
+
+	option = {
+		name = mdchaos_harmless.9.b
+		every_army_leader = {
+			add_defense = 1
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.10
+	title = mdchaos_harmless.10.title
+	desc = mdchaos_harmless.10.desc
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.10.a
+		increase_social_spending_2 = yes
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+		}
+		name = mdchaos_harmless.10.b
+		add_stability = -0.2
+		start_civil_war = {
+			ideology = communism
+		}
+	}
+}

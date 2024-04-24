@@ -1,0 +1,49 @@
+﻿l_english:
+ mdchaos_harmless.1.title: "Joe Rogan demands religion change"
+ mdchaos_harmless.1.desc: ""
+ mdchaos_harmless.1.a: "We must comply"
+ mdchaos_harmless.1.b: "Fuck off"
+
+ mdchaos_harmless.2.title: "[USA.GetLeader] invites [ROOT.GetLeader] to gamble"
+ mdchaos_harmless.2.desc: "The President of the United States has invited us to Las Vegas on a diplomatic trip. Little does [ROOT.GetLeader] know it's just a trick to get him to gamble in the casinos."
+ mdchaos_harmless.2.a: "We must oblige"
+ mdchaos_harmless.2.b: "Tell [USA.GetLeader] to fuck off"
+
+ mdchaos_harmless.3.title: "[SOV.GetLeader] offers to pay out our debt"
+ mdchaos_harmless.3.desc: "Seeing our desperate situation, [RUS.GetLeader] has offered to pay off all our debt with totally no strings attached!"
+ mdchaos_harmless.3.a: "Send [SOV.GetLeader] our regards!"
+ mdchaos_harmless.3.a_tt: "§GSets our debt to 0§!"
+ mdchaos_harmless.3.b: "Could we get nuclear technology instead?"
+ mdchaos_harmless.3.b_tt: "§RThis gives you absolutely everything needed to launch nukes (nuclear status, technology, missiles, the nukes themselves and a level 2 missile silo in your capital). Use the missile UI to lauch them.§!"
+ mdchaos_harmless.3.c: "Tell [SOV.GetLeader] to fuck off"
+
+ mdchaos_harmless.4.title: "Kanye West visits our country!"
+ mdchaos_harmless.4.desc: "Kanye West has decided to start a world tour, visiting our country first and foremost! This will surely bring positive values to our nation."
+ mdchaos_harmless.4.a: "We welcome him with open hands."
+
+ mdchaos_harmless.5.title: "The capitalists invest in power plants!"
+ mdchaos_harmless.5.desc: "The capitalists have decided to invest all their funds into power plants... We are still unsure of the reason."
+ mdchaos_harmless.5.a: "The power of laissez faire!"
+
+ mdchaos_harmless.6.title: "A little dark age edit of our country has gone viral"
+ mdchaos_harmless.6.desc: "A nationalistic edit of our country has gone viral on multiple social medias. We are going to profit greatly from our profound patriotism!"
+ mdchaos_harmless.6.a: "[ROOT.GetName] 10-0 high diff"
+
+ mdchaos_harmless.7.title: "[ROOT.GetLeader] was assasinated today"
+ mdchaos_harmless.7.desc: "Our great leader was assasinated in his sleep today! How are we going to recover from this?"
+ mdchaos_harmless.7.a: "He was incompetent anyway."
+
+ mdchaos_harmless.8.title: "Mr. Beast makes a video in [ROOT.GetName]"
+ mdchaos_harmless.8.desc: "Mr. Beast has made a new video in our country, giving away cash and stimulating the economy!"
+ mdchaos_harmless.8.a: "A great statesman!"
+ mdchaos_harmless.8.b: "Arrest him and seize his money!"
+
+ mdchaos_harmless.9.title: "Freddy Fazbear offers training to our generals!"
+ mdchaos_harmless.9.desc: "Freddy Fazbear has offered professional military training to our generals!"
+ mdchaos_harmless.9.a: "The best defense is..."
+ mdchaos_harmless.9.b: "Brilliant"
+
+ mdchaos_harmless.10.title: "Old people demand higher funding"
+ mdchaos_harmless.10.desc: "The old people in our country demand higher pensions and welfare. They are threatening a civil war if we dont comply!"
+ mdchaos_harmless.10.a: "Fine..."
+ mdchaos_harmless.10.b: "NEVER!"

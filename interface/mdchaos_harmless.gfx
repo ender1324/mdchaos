@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_kanye"
+		textureFile = "gfx/mdchaos_harmless/kanye.png"
+	}
+	spriteType = {
+		name = "GFX_rogan"
+		textureFile = "gfx/mdchaos_harmless/rogan.png"
+	}
+
+	spriteType = {
+		name = "GFX_mrbeast"
+		textureFile = "gfx/mdchaos_harmless/mrbeast.png"
+	}
+
+	spriteType = {
+		name = "GFX_freddy"
+		textureFile = "gfx/mdchaos_harmless/freddy.png"
+	}
+}
