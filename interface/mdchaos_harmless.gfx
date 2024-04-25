@@ -17,4 +17,9 @@ spriteTypes = {
 		name = "GFX_freddy"
 		textureFile = "gfx/mdchaos_harmless/freddy.png"
 	}
+
+	spriteType = {
+		name = "GFX_banana"
+		textureFile = "gfx/mdchaos_harmless/banana.png"
+	}
 }

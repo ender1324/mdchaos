@@ -47,3 +47,50 @@
  mdchaos_harmless.10.desc: "The old people in our country demand higher pensions and welfare. They are threatening a civil war if we dont comply!"
  mdchaos_harmless.10.a: "Fine..."
  mdchaos_harmless.10.b: "NEVER!"
+
+ mdchaos_harmless.11.title: "[ROOT.GetLeader] has been scammed!"
+ mdchaos_harmless.11.desc: "While doing his daily duties today, [ROOT.GetLeader] has been allegedly tricked into giving government shares of one of our factories to an unknown man located in the east."
+ mdchaos_harmless.11.a: "Truly unfortunate"
+ mdchaos_harmless.11.b: "They will pay"
+
+ mdchaos_harmless.12.title: "Classified military documents leaked on War Thunder forum"
+ mdchaos_harmless.12.desc: "Today top secret military documents have been leaked on the war thunder forums."
+ mdchaos_harmless.12.a: "This will help us greatly."
+
+ mdchaos_harmless.13.title: "A politician has died!"
+ mdchaos_harmless.13.desc: "Today a politician has commit suicide by shooting himself in the back of his head 9 times with his left hand! He also jumped off the window after the act!"
+ mdchaos_harmless.13.a: "But that doesn't make se-"
+
+ mdchaos_harmless.14.title: "Large business owner immigrates to our country"
+ mdchaos_harmless.14.desc: "A large businessman has immigrated into our country to escape his crimes of tax evasion."
+ mdchaos_harmless.14.a: "We will let him be"
+ mdchaos_harmless.14.b: "Seize his assets!"
+
+ mdchaos_harmless.15.title: "Reverse Maginot"
+ mdchaos_harmless.15.desc: "[GER.GetLeader] has announced that they will be building a fort line to protect from future French aggression."
+ mdchaos_harmless.15.a: "Good for them"
+
+ mdchaos_harmless.16.title: "Terrorism!"
+ mdchaos_harmless.16.desc: "A terrorist attack has occured in our capital today! There are multiple buildings damaged and some casualties!"
+ mdchaos_harmless.16.a: "Unfortunate."
+ mdchaos_harmless.16.b: "Someone has to pay for this!"
+
+ mdchaos_harmless.17.title: "I own a musket for home defence"
+ mdchaos_harmless.17.desc: "Own a musket for home defense, since that's what the founding fathers intended. Four ruffians break into my house. "What the devil?" As I grab my powdered wig and Kentucky rifle. Blow a golf ball sized hole through the first man, he's dead on the spot. Draw my pistol on the second man, miss him entirely because it's smoothbore and nails the neighbors dog. I have to resort to the cannon mounted at the top of the stairs loaded with grape shot, "Tally ho lads" the grape shot shreds two men in the blast, the sound and extra shrapnel set off car alarms. Fix bayonet and charge the last terrified rapscallion. He Bleeds out waiting on the police to arrive since triangular bayonet wounds are impossible to stitch up. Just as the founding fathers intended."
+ mdchaos_harmless.17.a: "Proud to be American"
+
+ mdchaos_harmless.18.title: "Far-Right News agency justifies war against us"
+ mdchaos_harmless.18.desc: "Our neighbors media has started justifying war against us by making false rumors of us doing border raids and oppressing their people."
+ mdchaos_harmless.18.a: "Ignore them"
+ mdchaos_harmless.18.b: "Compensate them"
+ mdchaos_harmless.18.c: "Demand reparations"
+
+ mdchaos_harmless.19.title: "[SOV.GetLeader] has clogged our toilet"
+ mdchaos_harmless.19.desc: "While on a diplomatic visit, [SOV.GetLeader] has clogged our embassy's toilet. Our population demands a response!"
+ mdchaos_harmless.19.a: "We must swallow it."
+ mdchaos_harmless.19.b: "Inacceptable!"
+
+ mdchaos_harmless.20.title: "Costa rica couped by a banana!"
+ mdchaos_harmless.20.desc: "Costa rica has been couped by a banana and the old government dissolved!"
+ mdchaos_harmless.20.a: "Send support to the new government."
+ mdchaos_harmless.20.b: "Embargo the new government!"

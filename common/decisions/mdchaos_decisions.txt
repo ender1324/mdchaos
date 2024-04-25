@@ -7,7 +7,7 @@ mdchaos_category = {
 		days_mission_timeout = mdchaos_time
 
 		timeout_effect = {
-			country_event = mdchaos.1
+			mdchaos_harmless_event = yes
 			activate_mission = mdchaos_incoming
 		}
 	}

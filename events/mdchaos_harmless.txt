@@ -34,7 +34,7 @@ country_event = {
 				add_ideas = pluralist
 			}
 			1 = {
-				add_ideas = buddhist
+				add_ideas = buddismGIT 
 			}
 			1 = {
 				add_ideas = hindu
@@ -80,11 +80,30 @@ country_event = {
 				modifier = pro_american
 			}
 		}
-		set_temp_variable = { treasury_change = -10.00 }
 		modify_treasury_effect = yes
 		random_list = {
-			50 = {
+			5 = {
+				set_temp_variable = { treasury_change = 1000.00 }
+				modify_treasury_effect = yes
+			}
+			5 = {
+				set_temp_variable = { treasury_change = 500.00 }
+				modify_treasury_effect = yes
+			}
+			10 = {
 				set_temp_variable = { treasury_change = 250.00 }
+				modify_treasury_effect = yes
+			}
+			10 = {
+				set_temp_variable = { treasury_change = 100.00 }
+				modify_treasury_effect = yes
+			}
+			10 = {
+				set_temp_variable = { treasury_change = -100.00 }
+				modify_treasury_effect = yes
+			}
+			10 = {
+				set_temp_variable = { treasury_change = -250.00 }
 				modify_treasury_effect = yes
 			}
 			50 = {
@@ -352,6 +371,447 @@ country_event = {
 		add_stability = -0.2
 		start_civil_war = {
 			ideology = communism
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.11
+	title = mdchaos_harmless.11.title
+	desc = mdchaos_harmless.11.desc
+
+	picture = GFX_indian_id
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.11.a
+		random_controlled_state = {
+			limit = { industrial_complex > 0 }
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		random_state = {
+			limit = { is_owned_by = RAJ }
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_harmless.11.b
+		random_controlled_state = {
+			limit = { industrial_complex > 0 }
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		random_state = {
+			limit = { is_owned_by = RAJ }
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		create_wargoal = {
+			target = RAJ
+			type = puppet_wargoal_focus
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.12
+	title = mdchaos_harmless.12.title
+	desc = mdchaos_harmless.12.desc
+
+	picture = GFX_kazakh_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.12.a
+		random_list = {
+			1 = {
+				add_tech_bonus = {
+					bonus = 0.9
+					uses = 1
+					category = Cat_ARMOR
+				}
+			}
+			1 = {
+				add_tech_bonus = {
+					bonus = 0.9
+					uses = 1
+					category = Cat_ARTILLERY
+				}
+			}
+			1 = {
+				add_tech_bonus = {
+					bonus = 0.9
+					uses = 1
+					category = Cat_INF
+				}
+			}
+			1 = {
+				add_tech_bonus = {
+					bonus = 0.9
+					uses = 1
+					category = Cat_AIR_EQP
+				}
+			}
+			1 = {
+				add_tech_bonus = {
+					bonus = 0.9
+					uses = 1
+					category = Cat_NAVAL_EQP
+				}
+			}
+			1 = {
+				add_tech_bonus = {
+					bonus = 0.9
+					uses = 1
+					category = Cat_nuclear_weapons
+				}
+			}
+			1 = {
+				add_tech_bonus = {
+					bonus = 0.9
+					uses = 1
+					category = Cat_AI
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.13
+	title = mdchaos_harmless.13.title
+	desc = mdchaos_harmless.13.desc
+
+	picture = GFX_attack_plot_embas
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.13.a
+		random_list = {
+			20 = {
+				kill_ideology_leader = communism
+			}
+			20 = {
+				kill_ideology_leader = neutrality
+			}
+			20 = {
+				kill_ideology_leader = democratic
+			}
+			20 = {
+				kill_ideology_leader = nationalist
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.14
+	title = mdchaos_harmless.14.title
+	desc = mdchaos_harmless.14.desc
+
+	picture = GFX_united_states_dollar
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.14.a
+		random_controlled_state = {
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_temp_variable = { temp_opinion = 5 }
+		change_international_bankers_opinion = yes
+		
+		set_temp_variable = { temp_opinion = -5 }
+		change_small_medium_business_owners_opinion = yes
+	}
+
+	option = {
+		name = mdchaos_harmless.14.b
+		set_temp_variable = { treasury_change = 35.00 }
+		modify_treasury_effect = yes
+		set_temp_variable = { temp_opinion = -5 }
+		change_international_bankers_opinion = yes
+		set_temp_variable = { temp_opinion = 5 }
+		change_small_medium_business_owners_opinion = yes
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.15
+	title = mdchaos_harmless.15.title
+	desc = mdchaos_harmless.15.desc
+
+	picture = GFX_bundeswehr1
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.15.a
+		every_state = {
+			limit = { is_owned_by = FRA }
+			every_neighbor_state = {
+				limit = { is_owned_by = GER }
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = FRA
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.16
+	title = mdchaos_harmless.16.title
+	desc = mdchaos_harmless.16.desc
+
+	picture = GFX_baku_gas_lines_country
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.16.a
+		add_stability = -0.1
+		add_manpower = -5
+		capital_scope = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_harmless.16.b
+		add_stability = -0.1
+		add_war_support = 0.1
+		add_manpower = -5
+		capital_scope = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+		}
+		random_neighbor_country = {
+			PREV.ROOT = {
+				create_wargoal = {
+					target = PREV
+					type = liberate_wargoal
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.17
+	title = mdchaos_harmless.17.title
+	desc = mdchaos_harmless.17.desc
+
+	picture = GFX_us_flag
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.17.a
+		division_template = {
+			name = "American Patriot"
+			regiments = {
+				Militia_Bat = { x = 0 y = 0 }
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"American Patriot\" division_template = \"American Patriot\" start_experience_factor = 1"
+				owner = ROOT
+				count = 20
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.18
+	title = mdchaos_harmless.18.title
+	desc = mdchaos_harmless.18.desc
+
+	picture = GFX_USA_Berkley_Riot
+	is_triggered_only = yes
+	
+	option = {
+		name = mdchaos_harmless.18.a
+		random_list = {
+			20 = {
+				random_neighbor_country = {
+					create_wargoal = {
+						target = ROOT
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+			80 = {}
+		}
+	}
+	option = {
+		name = mdchaos_harmless.18.b
+		set_temp_variable = { treasury_change = -50.00 }
+		modify_treasury_effect = yes
+		random_neighbor_country = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = supports_us
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_harmless.18.c
+		random_neighbor_country = {
+		random_list = {
+				50 = {
+					set_temp_variable = { treasury_change = -50.00 }
+					modify_treasury_effect = yes
+					PREV.PREV.ROOT = {
+						set_temp_variable = { treasury_change = 50.00 }
+						modify_treasury_effect = yes
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = imminent_danger_to_national_security
+					}
+				}
+				50 = {
+					create_wargoal = {
+						target = ROOT
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.19
+	title = mdchaos_harmless.19.title
+	desc = mdchaos_harmless.19.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.19.a
+		add_stability = -0.05
+		add_opinion_modifier = {
+			target = SOV
+			modifier = barbarian_practices
+		}
+	}
+
+	option = {
+		name = mdchaos_harmless.19.b
+		add_opinion_modifier = {
+			target = SOV
+			modifier = barbarian_practices
+		}
+		declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.20
+	title = mdchaos_harmless.20.title
+	desc = mdchaos_harmless.20.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.20.a
+		set_temp_variable = { treasury_change = -10.00 }
+		modify_treasury_effect = yes
+		set_temp_variable = { int_investment_change = 10.00 }
+		modify_international_investment_effect = yes
+		COS = {
+			kill_country_leader = yes
+			set_temp_variable = { change_leader_temp = 0 }
+			set_temp_variable = { rul_party_temp = 23 }
+			change_ruling_party_effect = yes
+			set_politics = {
+    			ruling_party = nationalist
+    			elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Banana"
+				picture = "GFX_banana"
+				ideology = Monarchist
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = supports_us
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_harmless.20.b
+		send_embargo = COS
+		COS = {
+			kill_country_leader = yes
+			set_temp_variable = { change_leader_temp = 0 }
+			set_temp_variable = { rul_party_temp = 23 }
+			change_ruling_party_effect = yes
+			set_politics = {
+    			ruling_party = nationalist
+    			elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Banana"
+				picture = "GFX_banana"
+				ideology = Monarchist
+			}
 		}
 	}
 }

@@ -1,0 +1,24 @@
+mdchaos_harmless_event = {
+	random_list = {
+		1 = { country_event = mdchaos_harmless.1 }
+		1 = { country_event = mdchaos_harmless.2 }
+		1 = { country_event = mdchaos_harmless.3 }
+		1 = { country_event = mdchaos_harmless.4 }
+		1 = { country_event = mdchaos_harmless.5 }
+		1 = { country_event = mdchaos_harmless.6 }
+		1 = { country_event = mdchaos_harmless.7 }
+		1 = { country_event = mdchaos_harmless.8 }
+		1 = { country_event = mdchaos_harmless.9 }
+		1 = { country_event = mdchaos_harmless.10 }
+		1 = { country_event = mdchaos_harmless.11 }
+		1 = { country_event = mdchaos_harmless.12 }
+		1 = { country_event = mdchaos_harmless.13 }
+		1 = { country_event = mdchaos_harmless.14 }
+		1 = { country_event = mdchaos_harmless.15 }
+		1 = { country_event = mdchaos_harmless.16 }
+		1 = { country_event = mdchaos_harmless.17 }
+		1 = { country_event = mdchaos_harmless.18 }
+		1 = { country_event = mdchaos_harmless.19 }
+		1 = { country_event = mdchaos_harmless.20 }
+	}
+}
