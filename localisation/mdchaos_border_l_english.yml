@@ -43,5 +43,48 @@
  mdchaos_border.5.d: "Under China"
 
  mdchaos_border.6.title: "Purchase a new territory."
- mdchaos_border.6.desc: "Foreign diplomats in our country have offered us to buy a few territories that have been unprofitable for them."
- mdchaos_border.6.a: "Kerguellen"
+ mdchaos_border.6.desc: "Foreign diplomats in our country have offered us to buy a few territories that have been unprofitable or a hinderance for them"
+ mdchaos_border.6.a: "St. Pierre"
+ mdchaos_border.6.b: "Ascension"
+ mdchaos_border.6.c: "Senkaku Islands"
+ mdchaos_border.6.d: "...London?"
+
+ mdchaos_border.7.title: "Expansion of absolute neutrality"
+ mdchaos_border.7.desc: " "
+ mdchaos_border.7.a: "A righteous cause!"
+
+ mdchaos_border.8.title: "Paris secedes!"
+ mdchaos_border.8.desc: "Today the local population of Paris has announced a secession! [FRA.GetLeader] has made no comment on the situation! It remains to be seen which country does the new Parisian state rejoins."
+ mdchaos_border.8.a: "WHAT"
+
+ mdchaos_border.9.title: "Czechoslovakia reforms!"
+ mdchaos_border.9.desc: "Today the Czech and Slovak governments have gathered to announce the reformation of Czechoslovakia. The move was inspired by increasing Western and European integrations by both countries, as well as regrets from the velvet divorce. The new joint Czech-Slovak development plans ensures balanced government spending in the both Czech and Slovak part"
+ mdchaos_border.9.a: "§0Truth prevails§!"
+ CZS: "Czechoslovakia"
+ CZS_DEF: "Czechoslovakia"
+ CZS_ADJ: "Czechoslovakian"
+
+ mdchaos_border.10.title: "Hungary returns to ancestral land"
+ mdchaos_border.10.desc: "Due to increasing disappointment with the European Union, Viktor Orban has announced that Hungary is returning to its ancestral homeland. §0Though, with ambitions of glory§!"
+ mdchaos_border.10.a: "About time..."
+
+ mdchaos_border.11.title: "The end of the USA"
+ mdchaos_border.11.desc: " "
+ mdchaos_border.11.a: "It was a neccessary measure."
+
+ mdchaos_border.12.title: "Reunification of Burma"
+ mdchaos_border.12.desc: " "
+ mdchaos_border.12.a: "Hopefully stability gets to them."
+
+ mdchaos_border.13.title: "The North Macedonian Question"
+ mdchaos_border.13.desc: "Bulgarian and Macedonian diplomats have approached us to decide the solution to the North Macedonian question."
+ mdchaos_border.13.a: "Bulgaria and Macedonia reunify..."
+ mdchaos_border.13.b: "...Bulgaria and Macedonia reunify"
+
+ mdchaos_border.14.title: "Restoration of Greater Romania"
+ mdchaos_border.14.desc: " "
+ mdchaos_border.14.a: "As it should be."
+
+ mdchaos_border.15.title: "The Return of Colonialism"
+ mdchaos_border.15.desc: "Today multiple European powers have announced that they will be restoring former colonial policies. What's made of this remains to be seen."
+ mdchaos_border.15.a: "Not again..."

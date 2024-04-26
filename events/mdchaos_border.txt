@@ -54,6 +54,9 @@ country_event = {
 
 	option = {
 		name = mdchaos_border.2.a
+		trigger = {
+			SOV = { is_ai = yes }
+		}
 		create_dynamic_country = {
 			original_tag = SOV
 			copy_tag = SOV
@@ -234,6 +237,87 @@ country_event = {
 			}
 			create_wargoal = {
 				target = KCC
+				type = annex_everything
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_border.2.a
+		trigger = {
+			SOV = { is_ai = no }
+		}
+		SOV = {
+			release = KLM
+			release = KOM
+			release = BSH
+			release = UDM
+			release = MEL
+			release = CHU
+			release = KHM
+			release = YAM
+			release = ALT
+			release = KHS
+			release = TUV
+			release = BRY
+			create_wargoal = {
+				target = KLM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KOM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BSH
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = UDM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MEL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = CHU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KHM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = YAM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ALT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KHS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = TUV
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BRY
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = YAK
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = CKK
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = DAG
 				type = annex_everything
 			}
 		}
@@ -441,6 +525,10 @@ country_event = {
 	option = {
 		name = mdchaos_border.4.e
 
+		trigger = {
+			BUL = { exists = yes }
+		}
+
 		BUL = {
 			# isr
 			transfer_state = 206
@@ -583,9 +671,579 @@ country_event = {
 	title = mdchaos_border.6.title
 	desc = mdchaos_border.6.desc
 
+	picture = GFX_house
 	is_triggered_only = yes
 
 	option = {
+		name = mdchaos_border.6.a
+		441 = {
+			owner = {
+				set_temp_variable = { treasury_change = 100.00 }
+				modify_treasury_effect = yes
+			}
+		}
+		ROOT = {
+			set_temp_variable = { treasury_change = -100.00 }
+			modify_treasury_effect = yes
+			transfer_state = 441
+		}
+	}
 
+	option = {
+		name = mdchaos_border.6.b
+		25 = {
+			owner = {
+				set_temp_variable = { treasury_change = 100.00 }
+				modify_treasury_effect = yes
+			}
+		}
+		ROOT = {
+			set_temp_variable = { treasury_change = -100.00 }
+			modify_treasury_effect = yes
+			transfer_state = 25
+		}
+	}
+
+	option = {
+		name = mdchaos_border.6.c
+		939 = {
+			owner = {
+				set_temp_variable = { treasury_change = 100.00 }
+				modify_treasury_effect = yes
+			}
+		}
+		ROOT = {
+			set_temp_variable = { treasury_change = -100.00 }
+			modify_treasury_effect = yes
+			transfer_state = 939
+		}
+	}
+
+	option = {
+		name = mdchaos_border.6.d
+		13 = {
+			owner = {
+				set_temp_variable = { treasury_change = 1000.00 }
+				modify_treasury_effect = yes
+			}
+		}
+		ROOT = {
+			set_temp_variable = { treasury_change = -1000.00 }
+			modify_treasury_effect = yes
+			transfer_state = 13
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.7
+	title = mdchaos_border.7.title
+	desc = mdchaos_border.7.desc
+
+	picture = GFX_sad_schroeder
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.7.a
+		SWI = {
+			random_neighbor_country = {
+				random_owned_controlled_state = {
+					limit = {
+						num_owned_neighbour_states = {
+							owner = SWI
+							count > 0
+						}
+					}
+					transfer_state_to = SWI
+					add_core_of = SWI
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.8
+	title = mdchaos_border.8.title
+	desc = mdchaos_border.8.desc
+
+	picture = GFX_french_flag_generic
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.8.a
+
+		random_country = {
+			limit = {
+				has_war = no
+				is_in_africa = yes
+			}
+			transfer_state = 56
+			add_state_core = 56
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.9
+	title = mdchaos_border.9.title
+	desc = mdchaos_border.9.desc
+
+	picture = GFX_csr1
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.9.a
+
+		trigger = {
+			SLO = { is_ai = yes }
+		}
+
+		CZE = {
+			every_state = {
+				limit = { is_owned_by = SLO }
+				add_core_of = CZE
+			}
+			add_state_core = 701
+			annex_country = {
+				target = SLO
+				transfer_troops = yes
+			}
+			set_cosmetic_tag = CZS
+		}
+	}
+
+	option = {
+		name = mdchaos_border.9.a
+
+		trigger = {
+			SLO = { is_ai = no }
+		}
+
+		SLO = {
+			every_state = {
+				limit = { is_owned_by = CZE }
+				add_core_of = SLO
+			}
+			add_state_core = 701
+			annex_country = {
+				target = CZE
+				transfer_troops = yes
+			}
+			set_cosmetic_tag = CZS
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.10
+	title = mdchaos_border.10.title
+	desc = mdchaos_border.10.desc
+
+	picture = GFX_uzbek_soldiers
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.10.a
+		HUN = {
+			remove_ideas = mdchaos_national_catastrophe_hun
+			every_state = {
+				limit = { is_owned_by = MON }
+				add_core_of = HUN
+			}
+			annex_country = {
+				target = MON
+				transfer_troops = yes
+			}
+			# chinese states
+			add_state_core = 556
+			add_state_core = 1097
+			# russian states
+			add_state_core = 1011
+			add_state_core = 686
+			add_state_core = 1070
+			add_state_core = 684
+			add_state_core = 592
+			every_state = {
+				limit = { is_owned_by = KAZ }
+				add_core_of = HUN
+			}
+			# add units to hungary so they take on russia and china
+			division_template = {
+				name = "Hungarian-Mongolian Cavlary"
+				regiments = {
+					Mech_Inf_Bat = { x = 0 y = 0 }
+					Mech_Inf_Bat = { x = 0 y = 1 }
+					Mech_Inf_Bat = { x = 0 y = 2 }
+					Mech_Inf_Bat = { x = 1 y = 0 }
+					Mech_Inf_Bat = { x = 1 y = 1 }
+					Mech_Inf_Bat = { x = 1 y = 2 }
+					Mech_Inf_Bat = { x = 2 y = 0 }
+					Mech_Inf_Bat = { x = 2 y = 1 }
+					Mech_Inf_Bat = { x = 2 y = 2 }
+					Sp_Arty_Bat = { x = 0 y = 3 }
+					Sp_Arty_Bat = { x = 1 y = 3 }
+					Sp_Arty_Bat = { x = 2 y = 3 }
+				}
+
+				support = {
+					Arty_Battery = { x = 0 y = 0 }
+					L_Engi_Comp = { x = 0 y = 1 }
+					L_Recce_Comp = { x = 0 y = 2 }
+				}
+			}
+			596 = {
+				create_unit = {
+					division = "name = \"Hungarian-Mongolian Cavlary\" division_template = \"Hungarian-Mongolian Cavlary\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = HUN
+					count = 50
+				}
+			}
+			597 = {
+				create_unit = {
+					division = "name = \"Hungarian-Mongolian Cavlary\" division_template = \"Hungarian-Mongolian Cavlary\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = HUN
+					count = 30
+				}
+			}
+			leave_faction = yes
+			create_wargoal = {
+				target = CHI
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SOV
+				type = annex_everything
+			}	
+		}
+		# remove hungarian shit from europe
+		MON = {
+			transfer_state = 121
+			transfer_state = 122
+			transfer_state = 123
+			transfer_state = 999
+			add_state_core = 122
+			add_state_core = 123
+			add_state_core = 999
+			# transylvania
+			add_state_core = 909
+			add_state_core = 910
+			add_state_core = 151
+			# banat
+			add_state_core = 130
+			add_state_core = 998
+			# slovakia
+			add_state_core = 119
+			add_state_core = 120
+			# carpatia
+			add_state_core = 701
+			set_capital = {
+				state = 121
+			}
+
+			division_template = {
+
+				name = "Hungarian-Mongolian Cavlary"
+
+				regiments = {
+					Mech_Inf_Bat = { x = 0 y = 0 }
+					Mech_Inf_Bat = { x = 0 y = 1 }
+					Mech_Inf_Bat = { x = 0 y = 2 }
+					Mech_Inf_Bat = { x = 1 y = 0 }
+					Mech_Inf_Bat = { x = 1 y = 1 }
+					Mech_Inf_Bat = { x = 1 y = 2 }
+					Mech_Inf_Bat = { x = 2 y = 0 }
+					Mech_Inf_Bat = { x = 2 y = 1 }
+					Mech_Inf_Bat = { x = 2 y = 2 }
+					Sp_Arty_Bat = { x = 0 y = 3 }
+					Sp_Arty_Bat = { x = 1 y = 3 }
+					Sp_Arty_Bat = { x = 2 y = 3 }
+				}
+
+				support = {
+					Arty_Battery = { x = 0 y = 0 }
+					L_Engi_Comp = { x = 0 y = 1 }
+					L_Recce_Comp = { x = 0 y = 2 }
+				}
+			}
+
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Hungarian-Mongolian Cavlary\" division_template = \"Hungarian-Mongolian Cavlary\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = MON
+					count = 50
+				}
+			}
+
+			create_wargoal = {
+				target = ROM
+				type = annex_everything
+			}		
+			create_wargoal = {
+				target = SER
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SLO
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = UKR
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.11
+	title = mdchaos_border.11.title
+	desc = mdchaos_border.11.desc
+
+	picture = GFX_great_recession_protests
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.11.a
+
+		trigger = {
+			USA = { is_ai = yes }
+		}
+
+		USA = {
+			release = CSA
+			release = LKT
+			LKT = {
+				declare_war_on = {
+					target = CSA
+					type = annex_everything
+				}
+			}
+			release = GLC
+			GLC = {
+				declare_war_on = {
+					target = CSA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = LKT
+					type = annex_everything
+				}
+			}
+			leave_faction = yes
+			delete_unit = {}
+			declare_war_on = {
+				target = CSA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LKT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GLC
+				type = annex_everything
+			}
+		}
+
+		MEX = {
+			transfer_state = 800
+			transfer_state = 803
+			transfer_state = 806
+			transfer_state = 811
+			transfer_state = 807
+			transfer_state = 805
+			transfer_state = 804
+			add_state_core = 800
+			add_state_core = 803
+			add_state_core = 806
+			add_state_core = 811
+			add_state_core = 807
+			add_state_core = 805
+			add_state_core = 804
+		}
+
+		CAN = {
+			transfer_state = 814
+			transfer_state = 765
+			transfer_state = 809
+			transfer_state = 764
+			transfer_state = 765
+			transfer_state = 766
+			transfer_state = 767
+			transfer_state = 1084
+			transfer_state = 768
+			add_state_core = 809
+			add_state_core = 764
+			add_state_core = 765
+			add_state_core = 766
+			add_state_core = 767
+			add_state_core = 1084
+			add_state_core = 768
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.12
+	title = mdchaos_border.12.title
+	desc = mdchaos_border.12.desc
+
+	picture = GFX_indian_soldiers1
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.12.a
+		trigger = {
+			KAC = {
+				is_ai = yes
+			}
+			WAA = {
+				is_ai = yes
+			}
+			SHN = {
+				is_ai = yes
+			}
+			KAR = {
+				is_ai = yes
+			}
+		}
+		BRM = {
+			annex_country = {
+				target = KAC
+			}
+			annex_country = {
+				target = WAA
+			}
+			annex_country = {
+				target = SHN
+			}
+			annex_country = {
+				target = KAR
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.13
+	title = mdchaos_border.13.title
+	desc = mdchaos_border.13.desc
+
+	picture = GFX_bulgaria_macedonia
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.13.a
+		
+		trigger = {
+			FYR = { is_ai = yes }
+		}
+
+		BUL = {
+			annex_country = {
+				target = FYR
+			}
+			add_state_core = 136
+			add_state_core = 135
+		}
+	}
+
+	option = {
+		name = mdchaos_border.13.b
+		trigger = {
+			BUL = { is_ai = yes }
+		}
+
+		FYR = {
+			annex_country = {
+				target = BUL
+			}
+			add_state_core = 153
+			add_state_core = 154
+			add_state_core = 996
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.14
+	title = mdchaos_border.14.title
+	desc = mdchaos_border.14.desc
+
+	picture = GFX_union_day
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.14.a
+
+		trigger = {
+			MLV = { is_ai = yes }
+		}
+
+		ROM = {
+			transfer_state = 335
+			transfer_state = 1111
+			annex_country = {
+				target = MLV
+				transfer_troops = yes
+			}
+			transfer_state = 333
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.15
+	title = mdchaos_border.15.title
+	desc = mdchaos_border.15.desc
+
+	picture = GFX_evergreen_tucked
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.15.a
+
+		ENG = {
+			declare_war_on = {
+				target = EGY
+				type = annex_everything
+			}
+		}
+
+		FRA = {
+			declare_war_on = {
+				target = ALG
+				type = annex_everything
+			}
+		}
+
+		ITA = {
+			declare_war_on = {
+				target = LBA
+				type = annex_everything
+			}
+		}
+
+		SPR = {
+			declare_war_on = {
+				target = MOR
+				type = annex_everything
+			}
+		}
+
+		GER = {
+			declare_war_on = {
+				target = TNZ
+				type = annex_everything
+			}
+		}
+
+		SOV = {
+			declare_war_on = {
+				target = DJI
+				type = annex_everything
+			}
+		}
 	}
 }
