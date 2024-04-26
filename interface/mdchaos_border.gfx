@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_mdchaos_national_catastrophe_hun"
+		textureFile = "gfx/mdchaos_border/mdchaos_national_catastrophe_hun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_rotten_structure_sov"
+		textureFile = "gfx/mdchaos_border/mdchaos_rotten_structure_sov.dds"
+	}
+}

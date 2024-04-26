@@ -1,1 +1,579 @@
 add_namespace = mdchaos_border
+
+country_event = {
+	id = mdchaos_border.1
+	title = mdchaos_border.1.title
+	desc = mdchaos_border.1.desc
+
+	picture = GFX_retaliatory_strike
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.1.a
+		123 = {
+			transfer_state_to = AUS
+			add_claim_by = AUS
+		}
+		999 = {
+			transfer_state_to = SER
+			add_claim_by = SER
+		}
+		122 = {
+			transfer_state_to = ROM
+			add_claim_by = ROM
+		}
+		HUN = {
+			add_ideas = mdchaos_national_catastrophe_hun
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.5
+			}
+			create_wargoal = {
+				target = ROM
+				type = liberate_wargoal
+			}
+			create_wargoal = {
+				target = AUS
+				type = liberate_wargoal
+			}
+			create_wargoal = {
+				target = SER
+				type = liberate_wargoal
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.2
+	title = mdchaos_border.2.title
+	desc = mdchaos_border.2.desc
+
+	picture = GFX_grozny_battle
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.2.a
+		create_dynamic_country = {
+			original_tag = SOV
+			copy_tag = SOV
+			set_cosmetic_tag = TNORUSSIA
+			transfer_state = 1129
+			transfer_state = 644
+			transfer_state = 645
+			transfer_state = 649
+			transfer_state = 654
+			transfer_state = 653
+			transfer_state = 656
+			transfer_state = 667
+			transfer_state = 668
+			transfer_state = 652
+			transfer_state = 651
+			transfer_state = 665
+			transfer_state = 657
+			transfer_state = 655
+			transfer_state = 666
+			transfer_state = 1130
+			transfer_state = 662
+			transfer_state = 1132
+			transfer_state = 660
+			transfer_state = 650
+			transfer_state = 646
+			transfer_state = 647
+			GER = {
+				puppet = PREV
+			}
+			SOV = {
+				create_wargoal = {
+					target = PREV
+					type = take_core_state
+				}
+			}
+		}
+		JAP = {
+			transfer_state = 691
+			transfer_state = 692
+			transfer_state = 690
+			transfer_state = 687
+			transfer_state = 1136
+			transfer_state = 1137
+		}
+		FIN = {
+			transfer_state = 643
+			transfer_state = 1128
+			add_state_core = 643
+			add_state_core = 1128
+		}
+		SOV = {
+			release = KLM
+			release = KOM
+			release = BSH
+			release = UDM
+			release = MEL
+			release = CHU
+			release = KHM
+			release = YAM
+			release = ALT
+			release = KHS
+			release = TUV
+			release = BRY
+			BRY = {
+				transfer_state = 685
+				add_state_core = 685
+			}
+			release = YAK
+			YAK = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				transfer_state = 682
+				transfer_state = 1069
+				add_state_core = 682
+				add_state_core = 1069
+			}
+			release = CKK
+			release = DAG
+			DAG = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				transfer_state = 670
+				add_state_core = 670
+			}
+			release = ING
+			release = SOO
+			release = KBK
+			release = ADY
+			ADY = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				transfer_state = 1140
+				add_state_core = 1140
+			}
+			release = KCC
+			add_ideas = mdchaos_rotten_structure_sov
+			create_wargoal = {
+				target = KLM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KOM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BSH
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = UDM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MEL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = CHU
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KHM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = YAM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ALT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KHS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = TUV
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BRY
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = YAK
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = CKK
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = DAG
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ING
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = SOO
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KBK
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = ADY
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KCC
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.3
+	title = mdchaos_border.3.title
+	desc = mdchaos_border.3.desc
+
+	picture = GFX_german_empire_border
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.3.a
+		GER = {
+			release = BAY
+			BAY = {
+				transfer_state = 42
+				add_state_core = 42
+			}
+			set_cosmetic_tag = PRE
+		}
+		FRA = {
+			transfer_state = 40
+			add_state_core = 40
+			transfer_state = 966
+			add_state_core = 966
+			transfer_state = 967
+			add_state_core = 967
+		}
+		ENG = {
+			transfer_state = 38
+			add_state_core = 38
+		}
+		DEN = {
+			transfer_state = 37
+			add_state_core = 37
+		}
+		CZE = {
+			transfer_state = 44
+			add_state_core = 44
+		}
+	}
+
+	option = {
+		name = mdchaos_border.3.b
+		GER = {
+			transfer_state = 625
+			add_state_core = 625
+			transfer_state = 626
+			add_state_core = 626
+			transfer_state = 474
+			add_state_core = 474
+			transfer_state = 113
+			add_state_core = 113
+			transfer_state = 115
+			transfer_state = 111
+
+			# alsace
+			transfer_state = 57
+			add_state_core = 57
+
+			# memel
+			transfer_state = 1043
+			add_state_core = 1043
+
+			# belgium
+			transfer_state = 965
+			add_state_core = 965
+
+			# east prussia
+			transfer_state = 642
+			add_state_core = 642
+			transfer_state = 116
+			add_state_core = 116
+		}
+	}
+
+	option = {
+		name = mdchaos_border.3.c
+		GER = {
+			transfer_state = 625
+			add_state_core = 625
+			transfer_state = 626
+			add_state_core = 626
+			transfer_state = 474
+			add_state_core = 474
+
+			# east prussia
+			transfer_state = 642
+			add_state_core = 642
+			transfer_state = 116
+			add_state_core = 116
+		}
+	}
+
+	option = {
+		name = mdchaos_border.3.d
+		GER = {
+			transfer_state = 625
+			add_state_core = 625
+			transfer_state = 626
+			add_state_core = 626
+			transfer_state = 474
+			add_state_core = 474
+
+			# east prussia
+			transfer_state = 642
+			add_state_core = 642
+			transfer_state = 116
+			add_state_core = 116
+
+			# Czechia
+			transfer_state = 117
+			transfer_state = 1017
+			transfer_state = 118
+
+			# Austria
+			transfer_state = 286
+			add_state_core = 286
+			transfer_state = 75
+			add_state_core = 75
+			transfer_state = 76
+			add_state_core = 76
+		}
+		1018 = {
+			transfer_state_to = POL
+		}
+	}
+
+	option = {
+		name = mdchaos_border.3.e
+		FRA = {
+			transfer_state = 967
+			add_state_core = 967
+		}
+		create_dynamic_country = {
+			original_tag = GER
+			copy_tag = GER
+			transfer_state = 545
+			transfer_state = 972
+			transfer_state = 539
+			transfer_state = 1079
+			transfer_state = 44
+			SOV = {
+				puppet = PREV
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.4
+	title = mdchaos_border.4.title
+	desc = mdchaos_border.4.desc
+
+	picture = GFX_Golan
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.4.a
+
+		ISR = {
+			transfer_state = 208
+			transfer_state = 209
+		}
+	}
+
+	option = {
+		name = mdchaos_border.4.b
+
+		PAL = {
+			transfer_state = 206
+			transfer_state = 207
+			transfer_state = 204
+			transfer_state = 205
+		}
+		DRU = {
+			transfer_state = 587
+			SYR = {
+				create_wargoal = {
+					target = PREV
+					type = take_core_state
+				}
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_border.4.c
+
+		PAL = {
+			transfer_state = 206
+			transfer_state = 207
+			diplomatic_relation = {
+				country = ISR
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_border.4.e
+
+		BUL = {
+			# isr
+			transfer_state = 206
+			add_state_core = 206
+			transfer_state = 204
+			add_state_core = 204
+			transfer_state = 207
+			add_state_core = 207
+			transfer_state = 205
+			add_state_core = 205
+			DRU = {
+				transfer_state = 587
+				SYR = {
+					create_wargoal = {
+						target = PREV
+						type = take_core_state
+					}
+				}
+			}
+
+			# pal
+			transfer_state = 209
+			transfer_state = 208
+		}
+
+		207 = {
+			set_state_name = "New Sofia"
+			set_province_name = { id = 1086 name = "New Sofia" }
+		}
+
+		206 = {
+			set_state_name = "New Plovdiv"
+			set_province_name = { id = 11970 name = "New Plovdiv" }
+		}
+	}
+
+	option = {
+		name = mdchaos_border.4.d
+
+		ENG = {
+			# isr
+			transfer_state = 206
+			transfer_state = 204
+			transfer_state = 207
+			transfer_state = 205
+			DRU = {
+				transfer_state = 587
+				SYR = {
+					create_wargoal = {
+						target = PREV
+						type = take_core_state
+					}
+				}
+			}
+
+			# pal
+			transfer_state = 209
+			transfer_state = 208
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.5
+	title = mdchaos_border.5.title
+	desc = mdchaos_border.5.desc
+
+	picture = GFX_the_two_koreas
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.5.a
+
+		NKO = {
+			annex_country = {
+				target = KOR
+				transfer_troops = yes
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_border.5.b
+
+		KOR = {
+			annex_country = {
+				target = NKO
+				transfer_troops = yes
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_border.5.c
+
+		JAP = {
+			annex_country = {
+				target = NKO
+			}
+			annex_country = {
+				target = KOR
+			}
+			add_state_core = 601
+			add_state_core = 602
+			add_state_core = 603
+			add_state_core = 604
+			add_state_core = 605
+			add_state_core = 606
+			add_state_core = 607
+			add_state_core = 608
+			add_state_core = 1099
+		}
+	}
+
+	option = {
+		name = mdchaos_border.5.c
+
+		CHI = {
+			annex_country = {
+				target = NKO
+			}
+			annex_country = {
+				target = KOR
+			}
+			add_state_core = 601
+			add_state_core = 602
+			add_state_core = 603
+			add_state_core = 604
+			add_state_core = 605
+			add_state_core = 606
+			add_state_core = 607
+			add_state_core = 608
+			add_state_core = 1099
+		}
+	}
+}

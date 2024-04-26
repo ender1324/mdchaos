@@ -1,0 +1,80 @@
+ideas = {
+	country = {
+		mdchaos_national_catastrophe_hun = {
+			picture = GFX_idea_mdchaos_national_catastrophe_hun
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				HUN = {
+					AND = {
+						owns_state = 123
+						owns_state = 999
+						owns_state = 122
+					}
+				}
+			}
+
+			targeted_modifier = {
+                tag = ROM
+                attack_bonus_against = 0.1
+            }
+
+			targeted_modifier = {
+                tag = AUS
+                attack_bonus_against = 0.1
+            }
+
+			targeted_modifier = {
+                tag = SER
+                attack_bonus_against = 0.1
+            }
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				custom_modifier_tooltip = mdchaos_national_catastrophe_removal_tt
+			}
+		}
+
+		mdchaos_rotten_structure_sov = {
+			picture = GFX_idea_mdchaos_rotten_structure_sov
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				SOV = {
+					controls_state = 652
+				}
+			}
+
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+
+			modifier = {
+				surrender_limit = 0.05
+				stability_weekly = -0.01
+				war_support_weekly = 0.01
+				army_attack_against_major_factor = 0.2
+				special_forces_cap = 0.5
+				custom_modifier_tooltip = mdchaos_rotten_structure_sov_removal_tt
+			}
+
+			rule = {
+				can_create_factions = yes
+				can_join_factions = no
+			}
+		}
+	}
+}
