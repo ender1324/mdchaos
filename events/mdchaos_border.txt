@@ -556,7 +556,7 @@ country_event = {
 	}
 
 	option = {
-		name = mdchaos_border.5.c
+		name = mdchaos_border.5.d
 
 		CHI = {
 			annex_country = {
@@ -575,5 +575,17 @@ country_event = {
 			add_state_core = 608
 			add_state_core = 1099
 		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.6
+	title = mdchaos_border.6.title
+	desc = mdchaos_border.6.desc
+
+	is_triggered_only = yes
+
+	option = {
+
 	}
 }

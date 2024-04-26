@@ -41,3 +41,7 @@
  mdchaos_border.5.b: "Under the South"
  mdchaos_border.5.c: "Under Japan"
  mdchaos_border.5.d: "Under China"
+
+ mdchaos_border.6.title: "Purchase a new territory."
+ mdchaos_border.6.desc: "Foreign diplomats in our country have offered us to buy a few territories that have been unprofitable for them."
+ mdchaos_border.6.a: "Kerguellen"
