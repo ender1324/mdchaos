@@ -1,0 +1,29 @@
+﻿l_english:
+ mdchaos_war.1.title: "Stan countries battle royale"
+ mdchaos_war.1.desc: "All -stan countries will go to war with eachother"
+ mdchaos_war.1.a: "May the best stan win"
+
+ mdchaos_war.2.title: "[USA.GetLeader] has found weapons of mass destruction in our country"
+ mdchaos_war.2.desc: "Today [USA.GetLeader] has announced that [USA.GetLeader.GetSheHe] has found weapons of mass destructions in our country. What this might mean for us remains to be seen."
+ mdchaos_war.2.a: "FUCK"
+
+ mdchaos_war.3.title: "NATO falls apart due to internal tension"
+ mdchaos_war.3.desc: "Today NATO has fallen apart due to internal tension between member states. Many states have declared war on eachother and the alliance is as good as dead now."
+ mdchaos_war.3.a: "Russia's smiling..."
+
+ mdchaos_war.4.title: "Random country finds oil deposits"
+ mdchaos_war.4.desc: "A random country has found oil under its soil. This will definitely bring prosperity into the country! Unless..."
+ mdchaos_war.4.a: "Uncle Sam is watching"
+
+ mdchaos_war.5.title: "Manifest Destiny"
+ mdchaos_war.5.desc: "[USA.GetLeader] has announced that USA is manifesting it's destiny. It's over for the world..."
+ mdchaos_war.5.a: "WHAT THE FUCK IS HAPPENING"
+
+ mdchaos_war.6.title: "Argentinian government couped by... Adolf Hitler"
+ mdchaos_war.6.desc: "Today the Argentinian nation mourns as the economic crisis and social upheval has lead to Adolf Hitler coming out of his 80 year hiding and declaring the Fourth Reich in Argentina. The people have welcomed this development and expect Hitler to bring Argentina to glory... unlike what he did to Germany..."
+ mdchaos_war.6.a: "Fourth time is the... charm?"
+ mdchaos_fourth_reich_ARG: "The Fourth Reich"
+ mdchaos_fourth_reich_ARG_desc: "Every corner of our land reverberates with the call to arms, as the sons and daughters of Argentina rally under the banner of the Iron Cross. From the heart of Neu Berlin to the farthest reaches of Patagonia, the drums of war thunder, heralding the dawn of a new era of German dominance.\n\nThe Reich's reach extends beyond our borders, beckoning forth the sons and daughters of Germany, drawn from distant lands to answer the call of their homeland. United in purpose, they stand ready to reclaim what was lost, to restore the Reich to its rightful place as the master of Europe.\n\nWith every passing day, our factories hum with the song of industry, our barracks overflow with the might of our armed forces. The fires of nationalism burn bright, igniting the hearts of our people with a fervent desire to see the swastika fly once more over the streets of Berlin.\n\n§RWe have around an year to reclaim Germany before the people lose hope and the inevitable collapse of our fiasco comes.§!"
+ FOURTHREICH: "Fourth German-Argentinian Reich"
+ FOURTHREICH_DEF: "the Fourth German-Argentinian Reich"
+ FOURTHREICH_ADJ: "German-Argentinian"

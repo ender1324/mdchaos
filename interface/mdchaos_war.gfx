@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Adolf_Hitler"
+		textureFile = "gfx/mdchaos_war/Adolf_Hitler.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mdchaos_fourth_reich_ARG"
+		textureFile = "gfx/mdchaos_war/mdchaos_fourth_reich_ARG.dds"
+	}
+}

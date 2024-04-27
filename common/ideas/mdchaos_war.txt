@@ -1,0 +1,44 @@
+ideas = {
+	country = {
+		mdchaos_fourth_reich_ARG = {
+			picture = GFX_idea_mdchaos_fourth_reich_ARG
+
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				controls_state = 45
+			}
+
+			on_remove = {
+				start_civil_war = {
+					ideology = democratic
+				}
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.1
+			}
+
+			modifier = {
+				nationalist_drift = 0.15
+				war_stability_factor = 0.1
+				personnel_cost_multiplier_modifier = -0.3
+				army_core_defence_factor = 0.3
+				research_speed_factor = 0.5
+				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.6
+				justify_war_goal_time = -0.5
+				naval_invasion_capacity = 50
+			}
+			rule = {
+				can_create_factions = yes
+				can_join_factions = no
+			}
+		}
+	}
+}

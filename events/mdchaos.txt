@@ -13,6 +13,7 @@ country_event = {
     }
 	option = {
         name = mdchaos.1.b
+		remove_mission = mdchaos_incoming
 		activate_mission = mdchaos_incoming
     }
 }

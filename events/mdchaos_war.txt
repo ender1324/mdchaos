@@ -1,0 +1,426 @@
+add_namespace = mdchaos_war
+
+country_event = {
+	id = mdchaos_war.1
+	title = mdchaos_war.1.title
+	desc = mdchaos_war.1.desc
+
+	picture = GFX_kyrgyz_uzbek_meet
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.1.a
+		PAK = {
+			diplomatic_relation = {
+				country = CHI
+				relation = guarantee
+				active = no
+			}
+		}
+		KAZ = {
+			leave_faction = yes
+			declare_war_on = {
+				target = UZB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TRK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KYR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TAJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TAL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PAK
+				type = annex_everything
+			}
+		}
+		UZB = {
+			leave_faction = yes
+			declare_war_on = {
+				target = TRK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KYR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TAJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TAL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PAK
+				type = annex_everything
+			}
+		}
+		TRK = {
+			leave_faction = yes
+			declare_war_on = {
+				target = KYR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TAJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TAL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PAK
+				type = annex_everything
+			}
+		}
+		KYR = {
+			leave_faction = yes
+			declare_war_on = {
+				target = TAJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TAL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PAK
+				type = annex_everything
+			}
+		}
+		TAJ = {
+			leave_faction = yes
+			declare_war_on = {
+				target = TAL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PAK
+				type = annex_everything
+			}
+		}
+		TAL = {
+			leave_faction = yes
+			declare_war_on = {
+				target = PAK
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.2
+	title = mdchaos_war.2.title
+	desc = mdchaos_war.2.desc
+
+	picture = GFX_george_w_bush
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.2.a
+		capital_scope = {
+			add_resource = {
+				type = oil
+				amount = 12
+			}
+		}
+		USA = {
+			declare_war_on = {
+				target = ROOT
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.3
+	title = mdchaos_war.3.title
+	desc = mdchaos_war.3.desc
+
+	picture = GFX_burning_oil_refinery
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			GRE = { is_ai = yes }
+			ROM = { is_ai = yes }
+		}
+		name = mdchaos_war.3.a
+		USA = {
+			dismantle_faction = yes
+		}
+	
+		GRE = {
+			add_state_core = 934
+			add_state_core = 155
+			add_state_core = 156
+			declare_war_on = {
+				target = TUR
+				type = annex_everything
+			}
+		}
+
+		HUN = {
+			add_state_core = 909
+			add_state_core = 910
+			add_state_core = 151
+			declare_war_on = {
+				target = ROM
+				type = annex_everything
+			}
+		}
+
+		SOV = {
+			create_wargoal = {
+				target = EST
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LAT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LIT
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				GRE = { is_ai = no }
+				ROM = { is_ai = no }
+			}
+		}
+		name = mdchaos_war.3.a
+		USA = {
+			dismantle_faction = yes
+		}
+	
+		GRE = {
+			add_state_core = 934
+			add_state_core = 155
+			add_state_core = 156
+			create_wargoal = {
+				target = TUR
+				type = annex_everything
+			}
+		}
+
+		HUN = {
+			add_state_core = 909
+			add_state_core = 910
+			add_state_core = 151
+			create_wargoal = {
+				target = ROM
+				type = annex_everything
+			}
+		}
+
+		SOV = {
+			create_wargoal = {
+				target = EST
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LAT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LIT
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.4
+	title = mdchaos_war.4.title
+	desc = mdchaos_war.4.desc
+
+	picture = GFX_george_w_bush
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.4.a
+
+		random_country = {
+			limit = { is_ai = yes }
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 7
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+			USA = {
+				create_wargoal = {
+					target = PREV
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.5
+	title = mdchaos_war.5.title
+	desc = mdchaos_war.5.desc
+
+	picture = GFX_trump_bill
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.5.a
+
+		every_state = {
+			limit = { is_core_of = CAN }
+			add_core_of = USA
+		}
+
+		USA = {
+			dismantle_faction = yes
+			create_wargoal = {
+				target = CAN
+				type = take_core_state
+			}
+			create_wargoal = {
+				target = MEX
+				type = take_core_state
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.6
+	title = mdchaos_war.6.title
+	desc = mdchaos_war.6.desc
+
+	picture = GFX_NPD_I
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.6.a
+		ARG = {
+			set_cosmetic_tag = FOURTHREICH
+			kill_country_leader = yes
+			set_temp_variable = { change_leader_temp = 0 }
+			set_temp_variable = { rul_party_temp = 21 }
+			change_ruling_party_effect = yes
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Adolf Hitler"
+				picture = "GFX_Adolf_Hitler"
+				ideology = Nat_Fascism
+				traits = {
+					dictator protector_of_german_culture ruthless alzheimer war_criminal
+				}
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.5
+			}
+			every_state = {
+				limit = { is_core_of = GER }
+				add_core_of = ARG
+			}
+			create_wargoal = {
+				target = GER
+				type = take_core_state
+			}
+			every_country = {
+				limit = { is_in_south_america = yes }
+				every_owned_state = {
+					add_core_of = ARG
+				}
+				ARG = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			# nazi exiles
+			add_manpower = 150000
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = industrial_complex
+					level = 10
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 20
+					instant_build = yes
+				}
+			}
+			# Rename cities
+			450 = {
+				set_state_name = "Neu Franken"
+				set_province_name = {
+					id = 4394
+					name = "Neu Frankfurt"
+				}
+			}
+			453 = {
+				set_state_name = "Neu Brandenburg"
+				set_province_name = {
+					id = 12364
+					name = "Neu Berlin"
+				}
+				set_province_name = {
+					id = 7621
+					name = "Neu Hamburg"
+				}
+			}
+			# add op ideas
+			add_timed_idea = {
+				idea = mdchaos_fourth_reich_ARG
+				days = 361
+			}
+		}
+	}
+}

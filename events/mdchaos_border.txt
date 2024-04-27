@@ -1247,3 +1247,133 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_border.16
+	title = mdchaos_border.16.title
+	desc = mdchaos_border.16.desc
+
+	picture = GFX_2012_catalan_prot
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.16.a
+
+		SPR = {
+			random_list = {
+				50 = {
+					release_autonomy = {
+						target = CAT
+						autonomy_state = autonomy_puppet_state
+					}
+				}
+				50 = {
+
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.17
+	title = mdchaos_border.17.title
+	desc = mdchaos_border.17.desc
+
+	picture = GFX_polish_sejm
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.17.a
+		trigger = { POL = { is_ai = yes } }
+
+		MNC = {
+			every_state = {
+				limit = { is_owned_by = POL }
+				add_core_of = MNC
+			}
+			annex_country = {
+				target = POL
+				transfer_troops = yes
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_border.17.a
+		trigger = { POL = { is_ai = no } }
+
+		MNC = {
+			every_state = {
+				limit = { is_owned_by = POL }
+				add_core_of = MNC
+			}
+			declare_war_on = {
+				target = POL
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.18
+	title = mdchaos_border.18.title
+	desc = mdchaos_border.18.desc
+
+	picture = GFX_eastern_europe
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.18.a
+
+		642 = {
+			transfer_state_to = CZE
+			add_core_of = CZE
+			remove_core_of = SOV
+			set_state_name = "Královec"
+			set_province_name = {
+				id = 6332
+				name = "Královec"
+			}
+			set_victory_points = {
+				province = 6332
+				value = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.19
+	title = mdchaos_border.19.title
+	desc = mdchaos_border.19.desc
+
+	picture = GFX_bulgaria_macedonia
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.19.a
+
+		trigger = { FYR = { is_ai = yes } }
+
+		every_state = {
+			limit = { is_owned_by = FYR }
+			transfer_state_to = BUL
+			add_core_of = BUL
+		}
+	}
+
+	option = {
+		name = mdchaos_border.19.a
+
+		trigger = { FYR = { is_ai = no } }
+
+		BUL = {
+			declare_war_on = {
+				target = FYR
+				type = annex_everything
+			}
+		}
+	}
+}

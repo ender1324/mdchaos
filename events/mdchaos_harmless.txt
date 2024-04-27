@@ -34,7 +34,7 @@ country_event = {
 				add_ideas = pluralist
 			}
 			1 = {
-				add_ideas = buddismGIT 
+				add_ideas = buddism
 			}
 			1 = {
 				add_ideas = hindu
@@ -759,6 +759,7 @@ country_event = {
 	title = mdchaos_harmless.20.title
 	desc = mdchaos_harmless.20.desc
 
+	picture = GFX_banana
 	is_triggered_only = yes
 
 	option = {
@@ -813,5 +814,94 @@ country_event = {
 				ideology = Monarchist
 			}
 		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.21
+	title = mdchaos_harmless.21.title
+	desc = mdchaos_harmless.21.desc
+
+	picture = GFX_UKR_zelenskyy
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.21.a
+
+		ROOT = {
+			set_temp_variable = { treasury_change = -50.00 }
+			modify_treasury_effect = yes
+			send_equipment = {
+				equipment = Inf_equipment
+				amount = 5000
+				target = UKR
+			}
+			send_equipment = {
+				equipment = cnc_equipment
+				amount = 500
+				target = UKR
+			}
+		}
+		UKR = {
+			set_temp_variable = { treasury_change = 50.00 }
+			modify_treasury_effect = yes
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = supports_us
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_harmless.21.b
+
+		hidden_effect = {
+			random_list = {
+				95 = {
+					country_event = {
+						id = mdchaos_harmless.21
+						days = 5
+						random_days = 5
+					}
+				}
+				5 = {}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.22
+	title = mdchaos_harmless.22.title
+	desc = mdchaos_harmless.22.desc
+
+	picture = GFX_CHI_china_unite
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.22.a
+		trigger = { NOT = { has_war_with = CHI } }
+
+		CHI = {
+			division_template = {
+				name = "Chinese Tank"
+				regiments = {
+					armor_Bat = { x = 0 y = 0 }
+				}
+			}
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"Chinese Tank\" division_template = \"Chinese Tank\" start_experience_factor = 0.5"
+				owner = CHI
+				allow_spawning_on_enemy_provs = yes
+				count = 1
+			}
+		}
+		white_peace = CHI
 	}
 }

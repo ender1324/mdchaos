@@ -20,5 +20,41 @@ mdchaos_harmless_event = {
 		1 = { country_event = mdchaos_harmless.18 }
 		1 = { country_event = mdchaos_harmless.19 }
 		1 = { country_event = mdchaos_harmless.20 }
+		1 = { country_event = mdchaos_harmless.21 }
+		1 = { country_event = mdchaos_harmless.22 }
+	}
+}
+
+mdchaos_border_event = {
+	random_list = {
+		1 = { country_event = mdchaos_border.1 }
+		1 = { country_event = mdchaos_border.2 }
+		1 = { country_event = mdchaos_border.3 }
+		1 = { country_event = mdchaos_border.4 }
+		1 = { country_event = mdchaos_border.5 }
+		1 = { country_event = mdchaos_border.6 }
+		1 = { country_event = mdchaos_border.7 }
+		1 = { country_event = mdchaos_border.8 }
+		1 = { country_event = mdchaos_border.9 }
+		1 = { country_event = mdchaos_border.10 }
+		1 = { country_event = mdchaos_border.11 }
+		1 = { country_event = mdchaos_border.12 }
+		1 = { country_event = mdchaos_border.13 }
+		1 = { country_event = mdchaos_border.14 }
+		1 = { country_event = mdchaos_border.15 }
+		1 = { country_event = mdchaos_border.16 }
+		1 = { country_event = mdchaos_border.17 }
+		1 = { country_event = mdchaos_border.18 }
+	}
+}
+
+mdchaos_war_event = {
+	random_list = {
+		1 = { country_event = mdchaos_war.1 }
+		1 = { country_event = mdchaos_war.2 }
+		1 = { country_event = mdchaos_war.3 }
+		1 = { country_event = mdchaos_war.4 }
+		1 = { country_event = mdchaos_war.5 }
+		1 = { country_event = mdchaos_war.6 }
 	}
 }
