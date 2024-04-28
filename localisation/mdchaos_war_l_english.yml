@@ -27,3 +27,11 @@
  FOURTHREICH: "Fourth German-Argentinian Reich"
  FOURTHREICH_DEF: "the Fourth German-Argentinian Reich"
  FOURTHREICH_ADJ: "German-Argentinian"
+
+ mdchaos_war.7.title: "Hispaniolan war"
+ mdchaos_war.7.desc: "To everyone's surprise, the Dominical republic has announced its ambitions of reunifying the islands."
+ mdchaos_war.7.a: "Hopefully this ends quickly"
+
+ mdchaos_war.8.title: "Osama bin Laden found hiding in random country!"
+ mdchaos_war.8.desc: "Obama bin Laden has been found hiding in a random country! How this has happened is completely unknown to the USA as he was thought to be dead. The random country's government is in absolute chaos!"
+ mdchaos_war.8.a: "wha-"

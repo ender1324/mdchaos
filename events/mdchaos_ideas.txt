@@ -1,0 +1,39 @@
+add_namespace = mdchaos_ideas
+
+country_event = {
+	id = mdchaos_ideas.1
+	title = mdchaos_ideas.1.title
+	desc = mdchaos_ideas.1.desc
+
+	picture = GFX_stock_market
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.1.a
+		depression = yes
+		set_temp_variable = { debt_change = 100 }
+		modify_debt_effect = yes
+		add_timed_idea = {
+			idea = mdchaos_venezuelan_economist
+			days = 31
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.2
+	title = mdchaos_ideas.2.title
+	desc = mdchaos_ideas.2.desc
+
+	picture = GFX_cartels_stacks
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.2.a
+
+		add_timed_idea = {
+			idea = mdchaos_ideas_mafia_stealing_taxes
+			days = 31
+		}
+	}
+}

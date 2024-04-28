@@ -905,3 +905,102 @@ country_event = {
 		white_peace = CHI
 	}
 }
+
+country_event = {
+	id = mdchaos_harmless.23
+	title = mdchaos_harmless.23.title
+	desc = mdchaos_harmless.23.desc
+
+	picture = GFX_hunley
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.23.a
+		launch_nuke = {
+			state = 50
+			controller = BEL
+			use_nuke = no
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.24
+	title = mdchaos_harmless.24.title
+	desc = mdchaos_harmless.24.desc
+
+	picture = GFX_hunley
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.24.a
+		random_country = {
+			limit = {
+				has_war = no
+				is_ai = yes
+			}
+			every_owned_state = {
+				USA = {
+					launch_nuke = {
+						state = PREV
+						use_nuke = no
+					}
+					set_temp_variable = { treasury_change = -1.00 }
+					modify_treasury_effect = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { treasury_change = 1.00 }
+			modify_treasury_effect = yes
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.25
+	title = mdchaos_harmless.25.title
+	desc = mdchaos_harmless.25.desc
+
+	picture = GFX_handshake_black
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.25.a
+		
+		random_country = {
+			limit = {
+				has_war = yes
+				is_ai = yes
+			}
+			random_country = {
+				limit = {
+					has_war_with = PREV
+					is_ai = yes
+				}
+				random_list = {
+					50 = {
+						annex_country = {
+							target = PREV
+							transfer_troops = yes
+						}
+					}
+					50 = {
+						PREV = {
+							annex_country = {
+								target = PREV
+								transfer_troops = yes
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

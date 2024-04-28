@@ -421,6 +421,63 @@ country_event = {
 				idea = mdchaos_fourth_reich_ARG
 				days = 361
 			}
+			# prevent flag change
+			remove_decision = Autocracy_flag
+			remove_decision = Reset_flag
+			remove_decision = Special_flag
+			remove_decision = add_dynamic_flag
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.7
+	title = mdchaos_war.7.title
+	desc = mdchaos_war.7.desc
+
+	picture = GFX_BRA_event_may_attacks
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.7.a
+		DOM = {
+			declare_war_on = {
+				target = HAI
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.8
+	title = mdchaos_war.8.title
+	desc = mdchaos_war.8.desc
+
+	picture = GFX_news_bin_laden_captured
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.8.a
+
+		random_country = {
+			limit = { is_ai = yes }
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+				}
+				create_wargoal = {
+					target = PREV
+					type = topple_government
+				}
+			}
 		}
 	}
 }

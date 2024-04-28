@@ -1377,3 +1377,22 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_border.20
+	title = mdchaos_border.20.title
+	desc = mdchaos_border.20.desc
+
+	picture = GFX_union_day
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.20.a
+
+		random_state = {
+			limit = { owner = { is_ai = yes } }
+			transfer_state_to = ROM
+			add_core_of = ROM
+		}
+	}
+}

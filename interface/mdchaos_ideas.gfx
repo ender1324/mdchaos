@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_mdchaos_venezuelan_economist"
+		textureFile = "gfx/mdchaos_ideas/mdchaos_venezuelan_economist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_ideas_mafia_stealing_taxes"
+		textureFile = "gfx/mdchaos_ideas/poor_economy.dds"
+	}
+}
