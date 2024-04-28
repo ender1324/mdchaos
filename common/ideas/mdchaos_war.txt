@@ -14,6 +14,7 @@ ideas = {
 			on_remove = {
 				start_civil_war = {
 					ideology = democratic
+					size = 0.8
 				}
 			}
 
