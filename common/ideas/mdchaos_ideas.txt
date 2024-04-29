@@ -24,5 +24,45 @@ ideas = {
 				tax_gain_multiplier_modifier = -0.4
 			}
 		}
+
+		mdchaos_ideas_strikes = {
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_factory_efficiency_gain_factor = -0.2
+				civilian_industry_tax_modifier = -0.5
+				productivity_growth_modifier = -0.1
+				energy_gain_multiplier = -0.2
+			}
+		}
+
+		mdchaos_ideas_high_expectations = {
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				expected_adm_modifier = 2
+				expected_police_modifier = 2
+				expected_education_modifier = 2
+				expected_healthcare_modifier = 2
+				expected_welfare_modifier = 2
+				expected_mil_modifier = 2
+			}
+		}
+
+		mdchaos_ideas_expensive_paper = {
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				bureaucracy_cost_factor = 0.1
+			}
+		}
 	}
 }

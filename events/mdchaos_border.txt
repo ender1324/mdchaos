@@ -1396,3 +1396,27 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_border.21
+	title = mdchaos_border.21.title
+	desc = mdchaos_border.21.desc
+
+	picture = GFX_french_flag_generic
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.21.a
+		trigger = { FRA = { is_ai = yes } }
+
+		SOV = {
+			puppet = PREV
+		}
+	}
+
+	option = {
+		name = mdchaos_border.21.a
+		trigger = { FRA = { is_ai = no } }
+		leave_faction = yes
+	}
+}

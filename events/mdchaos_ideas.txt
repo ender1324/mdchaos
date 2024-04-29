@@ -37,3 +37,195 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_ideas.3
+	title = mdchaos_ideas.3.title
+	desc = mdchaos_ideas.3.desc
+
+	picture = GFX_nuclear_power_plant
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.3.aa
+		every_country = {
+			add_ideas = idea_focus_energy_preferred_renewable
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.4
+	title = mdchaos_ideas.4.title
+	desc = mdchaos_ideas.4.desc
+
+	picture = GFX_message_signing
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.4.a
+		random_list = {
+			20 = {
+				add_country_leader_trait = spirit_of_genghis
+			}
+			20 = {
+				add_country_leader_trait = assassination_survivor
+			}
+			20 = {
+				add_country_leader_trait = experienced_banker
+			}
+			20 = {
+				set_cosmetic_tag = BOS
+				add_country_leader_trait = Architect_of_Bosnian_Independence
+			}
+			20 = {
+				add_country_leader_trait = VOTED_FOR_TRUMP
+			}
+			20 = {
+				add_country_leader_trait = leader_of_wagner_nazi
+			}
+			20 = {
+				add_country_leader_trait = beacon_of_islam
+			}
+			20 = {
+				add_country_leader_trait = afghanistan_support_afghan_peace
+			}
+			20 = {
+				kill_country_leader = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.5
+	title = mdchaos_ideas.5.title
+	desc = mdchaos_ideas.5.desc
+
+	picture = GFX_politics_cut_taxes
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.5.a
+		add_stability = -0.05
+		add_timed_idea = {
+			idea = mdchaos_ideas_strikes
+			days = 52
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.6
+	title = mdchaos_ideas.6.title
+	desc = mdchaos_ideas.6.desc
+
+	picture = GFX_politics_talks
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.6.a
+		every_country = {
+			add_ideas = md_closed_economy
+			block_trade_change = yes
+		}
+	}
+
+	option = {
+		name = mdchaos_ideas.6.b
+		every_country = {
+			add_ideas = globalized_trade_economy
+			block_trade_change = yes
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.7
+	title = mdchaos_ideas.7.title
+	desc = mdchaos_ideas.7.desc
+
+	picture = GFX_politics_protest
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.7.a
+		add_political_power = 50
+		add_stability = 0.05
+		decrease_intervention_law_effect = yes
+		block_intervention_increase = yes
+	}
+
+	option = {
+		name = mdchaos_ideas.7.b
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = -0.1
+		set_draft_army_effect = yes
+		block_conscription_decrease = yes
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.8
+	title = mdchaos_ideas.8.title
+	desc = mdchaos_ideas.8.desc
+
+	picture = GFX_report_event_Closed_Shop
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.8.a
+		every_country = {
+			decrease_two_level_economic_growth = yes
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.9
+	title = mdchaos_ideas.9.title
+	desc = mdchaos_ideas.9.desc
+
+	picture = GFX_german_emmigration
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.9.a
+		add_timed_idea = {
+			idea = mdchaos_ideas_high_expectations
+			days = 92
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.10
+	title = mdchaos_ideas.10.title
+	desc = mdchaos_ideas.10.desc
+
+	picture = GFX_UKR_meme
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.10.a
+		add_timed_idea = {
+			idea = mdchaos_ideas_expensive_paper
+			days = 92
+		}
+	}
+}

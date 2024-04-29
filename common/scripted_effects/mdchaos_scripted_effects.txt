@@ -25,6 +25,11 @@ mdchaos_harmless_event = {
 		1 = { country_event = mdchaos_harmless.23 }
 		1 = { country_event = mdchaos_harmless.24 }
 		1 = { country_event = mdchaos_harmless.25 }
+		1 = { country_event = mdchaos_harmless.26 }
+		1 = { country_event = mdchaos_harmless.27 }
+		1 = { country_event = mdchaos_harmless.28 }
+		1 = { country_event = mdchaos_harmless.29 }
+		1 = { country_event = mdchaos_harmless.30 }
 	}
 }
 
@@ -50,6 +55,7 @@ mdchaos_border_event = {
 		1 = { country_event = mdchaos_border.18 }
 		1 = { country_event = mdchaos_border.19 }
 		1 = { country_event = mdchaos_border.20 }
+		1 = { country_event = mdchaos_border.21 }
 	}
 }
 
@@ -63,5 +69,20 @@ mdchaos_war_event = {
 		1 = { country_event = mdchaos_war.6 }
 		1 = { country_event = mdchaos_war.7 }
 		1 = { country_event = mdchaos_war.8 }
+	}
+}
+
+mdchaos_ideas_event = {
+	random_list = {
+		1 = { country_event = mdchaos_ideas.1 }
+		1 = { country_event = mdchaos_ideas.2 }
+		1 = { country_event = mdchaos_ideas.3 }
+		1 = { country_event = mdchaos_ideas.4 }
+		1 = { country_event = mdchaos_ideas.5 }
+		1 = { country_event = mdchaos_ideas.6 }
+		1 = { country_event = mdchaos_ideas.7 }
+		1 = { country_event = mdchaos_ideas.8 }
+		1 = { country_event = mdchaos_ideas.9 }
+		1 = { country_event = mdchaos_ideas.10 }
 	}
 }

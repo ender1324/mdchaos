@@ -7,4 +7,16 @@ spriteTypes = {
 		name = "GFX_idea_mdchaos_ideas_mafia_stealing_taxes"
 		textureFile = "gfx/mdchaos_ideas/poor_economy.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_ideas_strikes"
+		textureFile = "gfx/mdchaos_ideas/political_violence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_ideas_high_expectations"
+		textureFile = "gfx/mdchaos_ideas/high_expectations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_ideas_expensive_paper"
+		textureFile = "gfx/mdchaos_ideas/expensive.dds"
+	}
 }

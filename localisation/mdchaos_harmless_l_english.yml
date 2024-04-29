@@ -102,7 +102,7 @@
 
  mdchaos_harmless.22.title: "What happened in 1984..?"
  mdchaos_harmless.22.desc: "VERY BAD! 20 social credits have been deducted 低等公民 and your internet access card 上网通行证 has been suspended for: 24 Hours. Please refrain from mentioning events that never happened that could discredit the great 人民共产党 People’s Communist Party again or we will be forced to 饿了就睡觉 send party agents to escort you to a re-education van 人民行刑车."
- mdchaos_harmless.22.a: "中华人民共和国寄语] Great work, Citizen! Your social credit score has increased by [5] Integers. Keep up the good work! 中华人民共和国寄语"
+ mdchaos_harmless.22.a: "中华人民共和国寄语] Great work, Citizen! Your social credit score has increased by 5 Integers. Keep up the good work! 中华人民共和国寄语"
 
  mdchaos_harmless.23.title: "Belgium is used as a nuclear testing ground"
  mdchaos_harmless.23.desc: " "
@@ -115,3 +115,24 @@
  mdchaos_harmless.25.title: "Country leaders at war decide to solve the war in a rap battle"
  mdchaos_harmless.25.desc: "With the conflict drawing on for years now, two country leaders have met and decided to solve the war in a 1 to 1 rap battle. What comes out of this remains to be seen"
  mdchaos_harmless.25.a: "A humane solution to an inhumane problem"
+
+ mdchaos_harmless.26.title: "Global militarization"
+ mdchaos_harmless.26.desc: " "
+ mdchaos_harmless.26.a: "It was inevitable"
+
+ mdchaos_harmless.27.title: "Russia claims the world"
+ mdchaos_harmless.27.desc: "President [SOV.GetLeader] has announced today that the entire world is Russian territory. This can be proved by his history analysis starting from 1 BC."
+ mdchaos_harmless.27.a: "Has [SOV.GetLeader] gone mad?"
+
+ mdchaos_harmless.28.title: "Bureucratic error"
+ mdchaos_harmless.28.desc: "We have accidentally sent a telegram to all countries that we are planning an attack on their borders."
+ mdchaos_harmless.28.a: "It happens..."
+ 
+ mdchaos_harmless.29.title: "Military exercises with neighbor"
+ mdchaos_harmless.29.desc: "Our neighbor has invited us to do military exercises with them!"
+ mdchaos_harmless.29.a: "Let's do army"
+ mdchaos_harmless.29.b: "Let's do air and navy"
+
+ mdchaos_harmless.30.title: "Bureucratic failures"
+ mdchaos_harmless.30.desc: "Our bureucracy has completely failed to function these days. This will have bad consequences on our nation..."
+ mdchaos_harmless.30.a: "We should have learned from the Germans..."

@@ -1004,3 +1004,111 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_harmless.26
+	title = mdchaos_harmless.26.title
+	desc = mdchaos_harmless.26.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.26.a
+		every_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}			
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.27
+	title = mdchaos_harmless.27.title
+	desc = mdchaos_harmless.27.desc
+
+	picture = GFX_bashnya_kremlya_whitesmonarchists
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.27.a
+		every_state = {
+			limit = {
+				OR = {
+					NOT = { is_claimed_by = SOV }
+					NOT = { is_core_of = SOV }
+				}
+			}
+			add_claim_by = SOV
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.28
+	title = mdchaos_harmless.28.title
+	desc = mdchaos_harmless.28.desc
+
+	picture = GFX_internal_faction_too_much_bureaucracy
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.28.a
+		every_country = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = imminent_danger_to_national_security
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.29
+	title = mdchaos_harmless.29.title
+	desc = mdchaos_harmless.29.desc
+
+	picture = GFX_internal_faction_fighter_jet
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.29.a
+		random_neighbor_country = {
+			limit = { NOT = { has_war_with = ROOT } }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = huge_increase
+			}
+		}
+		army_experience = 500
+	}
+	option = {
+		name = mdchaos_harmless.29.b
+		random_neighbor_country = {
+			limit = { NOT = { has_war_with = ROOT } }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = huge_increase
+			}
+		}
+		navy_experience = 500
+		air_experience = 500
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.30
+	title = mdchaos_harmless.30.title
+	desc = mdchaos_harmless.30.desc
+
+	picture = GFX_internal_faction_too_much_bureaucracy
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.30.a
+		add_political_power = -1000
+	}
+}
