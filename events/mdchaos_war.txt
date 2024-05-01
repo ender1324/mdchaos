@@ -668,7 +668,7 @@ country_event = {
 			}
 		}
 		every_country = {
-			limit = { any_state = { is_core_of = STH } }
+			limit = { any_owned_state = { is_core_of = STH } }
 			release = STH
 		}
 		STH = {
@@ -708,8 +708,10 @@ country_event = {
 		AST = {
 			every_state = {
 				limit = {
-					is_core_of = NZL
-					is_core_of = PAP
+					OR = {
+						is_core_of = NZL
+						is_core_of = PAP
+					}
 				}
 				add_core_of = AST
 			}

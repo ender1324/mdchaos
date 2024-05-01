@@ -5,6 +5,7 @@ mdchaos_category = {
 		}
 		is_good = no
 		days_mission_timeout = mdchaos_time
+		fixed_random_seed = no
 
 		timeout_effect = {
 			random_list = {
