@@ -10,7 +10,7 @@
  mdchaos_harmless.2.b: "Tell [USA.GetLeader] to fuck off"
 
  mdchaos_harmless.3.title: "[SOV.GetLeader] offers to pay out our debt"
- mdchaos_harmless.3.desc: "Seeing our desperate situation, [RUS.GetLeader] has offered to pay off all our debt with totally no strings attached!"
+ mdchaos_harmless.3.desc: "Seeing our desperate situation, [SOV.GetLeader] has offered to pay off all our debt with totally no strings attached!"
  mdchaos_harmless.3.a: "Send [SOV.GetLeader] our regards!"
  mdchaos_harmless.3.a_tt: "§GSets our debt to 0§!"
  mdchaos_harmless.3.b: "Could we get nuclear technology instead?"
@@ -136,3 +136,7 @@
  mdchaos_harmless.30.title: "Bureucratic failures"
  mdchaos_harmless.30.desc: "Our bureucracy has completely failed to function these days. This will have bad consequences on our nation..."
  mdchaos_harmless.30.a: "We should have learned from the Germans..."
+
+ mdchaos_harmless.31.title: "Dentist office opens in [ENG.GetNameDef]"
+ mdchaos_harmless.31.desc: "The first event dentist opens in [ENG.GetNameDef]! This will have unexpected consequences for the [ENG.GetAdjective] as such technology has never been seen before on those cursed Isles."
+ mdchaos_harmless.31.a: "Hopefully he doesnt get exiled..."

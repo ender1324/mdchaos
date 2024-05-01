@@ -7,7 +7,20 @@ mdchaos_category = {
 		days_mission_timeout = mdchaos_time
 
 		timeout_effect = {
-			mdchaos_harmless_event = yes
+			random_list = {
+				40 = {
+					mdchaos_harmless_event = yes
+				}
+				30 = {
+					mdchaos_ideas_event = yes
+				}
+				20 = {
+					mdchaos_border_event = yes
+				}
+				10 = {
+					mdchaos_war_event = yes
+				}
+			}
 			activate_mission = mdchaos_incoming
 		}
 	}

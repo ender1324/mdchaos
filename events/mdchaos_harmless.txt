@@ -861,7 +861,7 @@ country_event = {
 					country_event = {
 						id = mdchaos_harmless.21
 						days = 5
-						random_days = 5
+						random_days = 30
 					}
 				}
 				5 = {}
@@ -1110,5 +1110,22 @@ country_event = {
 	option = {
 		name = mdchaos_harmless.30.a
 		add_political_power = -1000
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.31
+	title = mdchaos_harmless.31.title
+	desc = mdchaos_harmless.31.desc
+
+	picture = GFX_british_flag_two
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.31.a
+		ENG = {
+			add_stability = 0.03
+			add_war_support = -0.03
+		}
 	}
 }

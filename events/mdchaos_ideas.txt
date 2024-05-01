@@ -47,7 +47,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = mdchaos_ideas.3.aa
+		name = mdchaos_ideas.3.a
 		every_country = {
 			add_ideas = idea_focus_energy_preferred_renewable
 			random_owned_controlled_state = {

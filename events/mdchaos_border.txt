@@ -41,6 +41,7 @@ country_event = {
 				type = liberate_wargoal
 			}
 		}
+		set_country_flag = mdchaos_border_1_happened
 	}
 }
 
@@ -240,6 +241,7 @@ country_event = {
 				type = annex_everything
 			}
 		}
+		set_country_flag = mdchaos_border_2_happened
 	}
 
 	option = {
@@ -992,6 +994,7 @@ country_event = {
 				type = annex_everything
 			}
 		}
+		set_country_flag = mdchaos_border_10_happened
 	}
 }
 
@@ -1081,6 +1084,7 @@ country_event = {
 			add_state_core = 1084
 			add_state_core = 768
 		}
+		set_country_flag = mdchaos_border_11_happened
 	}
 }
 
@@ -1297,6 +1301,7 @@ country_event = {
 				transfer_troops = yes
 			}
 		}
+		set_country_flag = mdchaos_border_17_happened
 	}
 
 	option = {
@@ -1341,6 +1346,7 @@ country_event = {
 				value = 10
 			}
 		}
+		set_country_flag = mdchaos_border_18_happened
 	}
 }
 
@@ -1410,7 +1416,7 @@ country_event = {
 		trigger = { FRA = { is_ai = yes } }
 
 		SOV = {
-			puppet = PREV
+			puppet = FRA
 		}
 	}
 
@@ -1418,5 +1424,269 @@ country_event = {
 		name = mdchaos_border.21.a
 		trigger = { FRA = { is_ai = no } }
 		leave_faction = yes
+	}
+}
+
+country_event = {
+	id = mdchaos_border.22
+	title = mdchaos_border.22.title
+	desc = mdchaos_border.22.desc
+
+	picture = GFX_report_event_ITA_EU_Flag
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.22.a
+		trigger = { ITA = { is_ai = yes } }
+		USA = {
+			every_state = {
+				limit = { is_core_of = ITA }
+				add_core_of = USA
+			}
+			annex_country = {
+				target = ITA
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.23
+	title = mdchaos_border.23.title
+	desc = mdchaos_border.23.desc
+
+	picture = GFX_boosaaso
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.23.a
+
+		SUD = {
+			transfer_state = 590
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.24
+	title = mdchaos_border.24.title
+	desc = mdchaos_border.24.desc
+
+	picture = GFX_riots_austerity
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.24.a
+		trigger = {
+			CYP = { is_ai = yes }
+			NCY = { is_ai = yes }
+		}
+
+		GRE = {
+			transfer_state = 145
+			transfer_state = 146
+			add_state_core = 145
+			add_state_core = 146
+			add_state_core = 812
+		}
+	}
+
+	option = {
+		name = mdchaos_border.24.b
+		trigger = {
+			CYP = { is_ai = yes }
+			NCY = { is_ai = yes }
+		}
+
+		TUR = {
+			transfer_state = 145
+			transfer_state = 146
+			add_state_core = 145
+			add_state_core = 146
+			add_state_core = 812
+		}
+	}
+
+	option = {
+		name = mdchaos_border.24.c
+		trigger = {
+			CYP = { is_ai = yes }
+			NCY = { is_ai = yes }
+		}
+
+		ENG = {
+			transfer_state = 145
+			transfer_state = 146
+			add_state_core = 145
+			add_state_core = 146
+			add_state_core = 812
+		}
+	}
+
+	option = {
+		name = mdchaos_border.24.d
+		trigger = {
+			CYP = { is_ai = no }
+			NCY = { is_ai = yes }
+		}
+
+		CYP = {
+			transfer_state = 146
+		}
+	}
+
+	option = {
+		name = mdchaos_border.24.d
+		trigger = {
+			CYP = { is_ai = yes }
+			NCY = { is_ai = no }
+		}
+
+		CYP = {
+			transfer_state = 146
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.25
+	title = mdchaos_border.25.title
+	desc = mdchaos_border.25.desc
+
+	picture = GFX_report_event_Italy_From_Space_1
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.25.a
+		HLS = {
+			transfer_state = 81
+			add_state_core = 81
+		}
+		SMA = {
+			transfer_state = 265
+			add_state_core = 265
+		}
+		MNC = {
+			transfer_state = 1000
+			add_state_core = 1000
+		}
+		LIC = {
+			transfer_state = 286
+			add_state_core = 286
+		}
+		LUX = {
+			transfer_state = 965
+			add_state_core = 965
+		}
+		ADO = {
+			transfer_state = 961
+			add_state_core = 961
+		}
+		MLT = {
+			transfer_state = 487
+			add_state_core = 487
+		}
+		SIN = {
+			transfer_state = 527
+			add_state_core = 527
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.26
+	title = mdchaos_border.26.title
+	desc = mdchaos_border.26.desc
+
+	picture = GFX_report_event_San_Pietro
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.26.a
+
+		add_state_core = 81
+		add_state_core = 929
+	}
+
+	option = {
+		name = mdchaos_border.26.b
+
+		add_state_core = 934
+	}
+
+	option = {
+		name = mdchaos_border.26.c
+
+		add_state_core = 652
+	}
+
+	option = {
+		name = mdchaos_border.26.d
+
+		add_state_core = 153
+	}
+}
+
+country_event = {
+	id = mdchaos_border.27
+	title = mdchaos_border.27.title
+	desc = mdchaos_border.27.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.27.a
+		trigger = { MLD = { is_ai = yes } }
+
+		annex_country = {
+			target = MLD
+		}
+	}
+
+	option = {
+		name = mdchaos_border.27.a
+		trigger = { MLD = { is_ai = no } }
+
+		create_wargoal = {
+			target = MLD
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.28
+	title = mdchaos_border.28.title
+	desc = mdchaos_border.28.desc
+
+	picture = GFX_falkland_islands
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.28.a
+
+		26 = {
+			transfer_state_to = ARG
+			add_core_of = ARG
+		}
+	}
+
+	option = {
+		name = mdchaos_border.28.b
+
+		26 = {
+			transfer_state_to = ENG
+			add_core_of = ENG
+		}
+	}
+
+	option = {
+		name = mdchaos_border.28.c
+
+		26 = {
+			transfer_state_to = PAR
+			add_core_of = PAR
+		}
 	}
 }

@@ -35,3 +35,32 @@
  mdchaos_war.8.title: "Osama bin Laden found hiding in random country!"
  mdchaos_war.8.desc: "Obama bin Laden has been found hiding in a random country! How this has happened is completely unknown to the USA as he was thought to be dead. The random country's government is in absolute chaos!"
  mdchaos_war.8.a: "wha-"
+
+ mdchaos_war.9.title: "African border conflict"
+ mdchaos_war.9.desc: "Two african nations have got themselves into a border war..."
+ mdchaos_war.9.a: "It's all the Britishes fault"
+
+ mdchaos_war.10.title: "Mass Kurdish Revolt!"
+ mdchaos_war.10.desc: "Kurdistan has revolted all across the middle east..."
+ mdchaos_war.10.a: "Sooner or later it would have happened"
+
+ mdchaos_war.11.title: "Taiwan moves to reclaim the mainland"
+ mdchaos_war.11.desc: "Taiwan is moving in to reclaim the mainland from Communist oppression. Multiple uprisings have already started to occur across the coast..."
+ mdchaos_war.11.a: "It only took them 60 years."
+
+ mdchaos_war.12.title: "Two leaders marry"
+ mdchaos_war.12.desc: "Two leaders of different countries have married and formed an alliance due to their marrage!"
+ mdchaos_war.12.a: "Congratalations!"
+ president_faction_name: "[THIS.GetAdjective]-[PREV.GetAdjective] Alliance"
+
+ mdchaos_war.13.title: "Large oil and gold deposits found on Saint Helena and Ascention!"
+ mdchaos_war.13.desc: "While doing everyday duties, today the governor of Saint Helena and Ascention has found large amounts of oil and gold near the coast of both islands. Wanting to preverse all the wealth for himself and the people of the island, he declared independence. This proved to be a grave mistake because all major powers are now racing to get control of the island."
+ mdchaos_war.13.a: "The race for the gold coast has begun."
+
+ mdchaos_war.14.title: "Australia wishes to unite Australasia"
+ mdchaos_war.14.desc: "The Australian government has announced their ambitions of conquering Australasia..."
+ mdchaos_war.14.a: "War looms all over the world..."
+
+ mdchaos_war.15.title: "Random small countries go to war"
+ mdchaos_war.15.desc: "Random tiny countries go to war lmao napoleon syndrome"
+ mdchaos_war.15.a: "Hopefully they get bigger?"

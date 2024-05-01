@@ -61,7 +61,7 @@ ideas = {
 			}
 
 			modifier = {
-				bureaucracy_cost_factor = 0.1
+				bureaucracy_cost_multiplier_modifier = 0.1
 			}
 		}
 	}

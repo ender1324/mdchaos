@@ -481,3 +481,273 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_war.9
+	title = mdchaos_war.9.title
+	desc = mdchaos_war.9.desc
+
+	picture = GFX_ETH_cathedral
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.9.a
+		random_country = {
+			limit = {
+				is_in_africa = yes
+				is_ai = yes
+			}
+			random_neighbor_country = {
+				limit = {
+					is_in_africa = yes
+					is_ai = yes
+				}
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.10
+	title = mdchaos_war.10.title
+	desc = mdchaos_war.10.desc
+
+	picture = GFX_kurdistan
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.10.a
+
+		every_country = {
+			limit = {
+				any_owned_state = {
+					is_core_of = KUR
+				}
+			}
+			release = KUR
+			KUR = {
+				declare_war_on = {
+					target = PREV
+					type = liberate_wargoal
+				}
+				division_template = {
+					name = "Kurdish Militias"
+					regiments = {
+						Militia_Bat = { x = 0 y = 0 }
+						Militia_Bat = { x = 0 y = 1 }
+						Militia_Bat = { x = 0 y = 2 }
+						Militia_Bat = { x = 1 y = 0 }
+						Militia_Bat = { x = 1 y = 1 }
+						Militia_Bat = { x = 1 y = 2 }
+						Militia_Bat = { x = 2 y = 0 }
+						Militia_Bat = { x = 2 y = 1 }
+						Militia_Bat = { x = 2 y = 2 }
+					}
+	
+					support = {
+						Arty_Battery = { x = 0 y = 0 }
+						L_Engi_Comp = { x = 0 y = 1 }
+						L_Recce_Comp = { x = 0 y = 2 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Kurdish Militias\" division_template = \"Kurdish Militias\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = KUR
+						count = 20
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.11
+	title = mdchaos_war.11.title
+	desc = mdchaos_war.11.desc
+	
+	picture = GFX_TAI_taiwan
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.11.a
+		trigger = {
+			TAI = { is_ai = yes }
+			CHI = { is_ai = yes }
+		}
+
+		TAI = {
+			transfer_state = 595
+			transfer_state = 532
+			transfer_state = 540
+			declare_war_on = {
+				target = CHI
+				type = annex_everything
+			}
+			division_template = {
+				name = "KMT Militias"
+				regiments = {
+					Mech_Inf_Bat = { x = 0 y = 0 }
+					Mech_Inf_Bat = { x = 0 y = 1 }
+					Mech_Inf_Bat = { x = 0 y = 2 }
+					Mech_Inf_Bat = { x = 1 y = 0 }
+					Mech_Inf_Bat = { x = 1 y = 1 }
+					Mech_Inf_Bat = { x = 1 y = 2 }
+					Mech_Inf_Bat = { x = 2 y = 0 }
+					Mech_Inf_Bat = { x = 2 y = 1 }
+					Mech_Inf_Bat = { x = 2 y = 2 }
+					Sp_Arty_Bat = { x = 0 y = 3 }
+					Sp_Arty_Bat = { x = 1 y = 3 }
+					Sp_Arty_Bat = { x = 2 y = 3 }
+				}
+
+				support = {
+					Arty_Battery = { x = 0 y = 0 }
+					L_Engi_Comp = { x = 0 y = 1 }
+					L_Recce_Comp = { x = 0 y = 2 }
+				}
+			}
+			540 = {
+				create_unit = {
+					division = "name = \"KMT Militias\" division_template = \"KMT Militias\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = TAI
+					count = 50
+				}
+			}
+			532 = {
+				create_unit = {
+					division = "name = \"KMT Militias\" division_template = \"KMT Militias\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = TAI
+					count = 50
+				}
+			}
+		}
+		set_country_flag = mdchaos_war_11_happened
+	}
+}
+
+country_event = {
+	id = mdchaos_war.12
+	title = mdchaos_war.12.title
+	desc = mdchaos_war.12.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.12.a
+
+		random_country = {
+			random_other_country = {
+				leave_faction = yes
+				create_faction = president_faction_name
+				add_to_faction = PREV
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.13
+	title = mdchaos_war.13.title
+	desc = mdchaos_war.13.desc
+
+	picture = GFX_albacountryevent
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.13.a
+		trigger = {
+			OR = {
+				NOT = { country_exists = STH }
+				STH = { is_ai = yes }
+			}
+		}
+		every_country = {
+			limit = { any_state = { is_core_of = STH } }
+			release = STH
+		}
+		STH = {
+			every_owned_state = {
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+				add_resource = {
+					type = chromium
+					amount = 20
+				}
+			}
+		}
+		every_country = {
+			limit = { is_major = yes }
+			create_wargoal = {
+				target = STH
+				type = annex_everything
+			}
+		}
+		set_country_flag = mdchaos_war_13_happened
+	}
+}
+
+country_event = {
+	id = mdchaos_war.14
+	title = mdchaos_war.14.title
+	desc = mdchaos_war.14.desc
+
+	picture = GFX_AST_generic
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.14.a
+
+		AST = {
+			every_state = {
+				limit = {
+					is_core_of = NZL
+					is_core_of = PAP
+				}
+				add_core_of = AST
+			}
+			create_wargoal = {
+				target = NZL
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PAP
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.15
+	title = mdchaos_war.15.title
+	desc = mdchaos_war.15.desc
+
+	picture = GFX_rohelcuba
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.15.a
+
+		random_country = {
+			limit = {
+				num_of_controlled_states < 2
+				is_ai = yes
+			}
+			random_other_country = {
+				limit = { num_of_controlled_states < 2 }
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
