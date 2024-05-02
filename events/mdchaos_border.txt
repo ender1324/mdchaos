@@ -1017,6 +1017,7 @@ country_event = {
 			release = CSA
 			release = LKT
 			LKT = {
+				add_ideas = mdchaos_border_death_usa
 				declare_war_on = {
 					target = CSA
 					type = annex_everything
@@ -1024,6 +1025,7 @@ country_event = {
 			}
 			release = GLC
 			GLC = {
+				add_ideas = mdchaos_border_death_usa
 				declare_war_on = {
 					target = CSA
 					type = annex_everything
@@ -1047,6 +1049,9 @@ country_event = {
 				target = GLC
 				type = annex_everything
 			}
+			add_ideas = mdchaos_border_death_usa
+			## add the idea to the csa
+			CSA = { add_ideas = mdchaos_border_death_usa }
 		}
 
 		MEX = {

@@ -19,4 +19,28 @@ spriteTypes = {
 		name = "GFX_idea_mdchaos_ideas_expensive_paper"
 		textureFile = "gfx/mdchaos_ideas/expensive.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_chatgpt_science"
+		textureFile = "gfx/mdchaos_ideas/voting_for_robert.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_speed_steroids"
+		textureFile = "gfx/mdchaos_ideas/drunkard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_strength_steroids"
+		textureFile = "gfx/mdchaos_ideas/drunkard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_white_powder"
+		textureFile = "gfx/mdchaos_ideas/opium.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_ideas_gambling_addiction"
+		textureFile = "gfx/mdchaos_ideas/ineffecient_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_ideas_romanian_tricks"
+		textureFile = "gfx/mdchaos_ideas/chest_out_of_brass.dds"
+	}
 }

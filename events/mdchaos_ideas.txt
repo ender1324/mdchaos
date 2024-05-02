@@ -229,3 +229,154 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_ideas.11
+	title = mdchaos_ideas.11.title
+	desc = mdchaos_ideas.11.desc
+
+	picture = GFX_computer
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.11.a
+		add_timed_idea = {
+			idea = mdchaos_ideas_chatgpt_science
+			days = 92
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.12
+	title = mdchaos_ideas.12.title
+	desc = mdchaos_ideas.12.desc
+
+	picture = GFX_special_forces
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.12.a
+		every_country = {
+			add_timed_idea = {
+				idea = mdchaos_speed_steroids
+				days = 31
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.13
+	title = mdchaos_ideas.13.title
+	desc = mdchaos_ideas.13.desc
+
+	picture = GFX_event_pmcs
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.13.a
+		add_timed_idea = {
+			idea = mdchaos_strength_steroids
+			days = 31
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.14
+	title = mdchaos_ideas.14.title
+	desc = mdchaos_ideas.14.desc
+
+	picture = GFX_cartels_stacks
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.14.a
+		add_timed_idea = {
+			idea = mdchaos_white_powder
+			days = 92
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.15
+	title = mdchaos_ideas.15.title
+	desc = mdchaos_ideas.15.desc
+
+	picture = GFX_failed_to_catch_migrants
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.15.a
+
+		add_timed_idea = {
+			idea = KAZ_high_emigration_5
+			days = 31
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.16
+	title = mdchaos_ideas.16.title
+	desc = mdchaos_ideas.16.desc
+
+	picture = GFX_nastase_and_putin
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.16.a
+
+		add_timed_idea = {
+			idea = mdchaos_ideas_gambling_addiction
+			days = 62
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.17
+	title = mdchaos_ideas.17.title
+	desc = mdchaos_ideas.17.desc
+
+	picture = GFX_funar_and_vadim
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.17.a
+
+		set_temp_variable = { treasury_change = -250.00 }
+		modify_treasury_effect = yes
+		add_opinion_modifier = {
+			target = ROM
+			modifier = massive_commercial_relations
+		}
+		ROM = {
+			set_temp_variable = { treasury_change = 250.00 }
+			modify_treasury_effect = yes
+			add_opinion_modifier = {
+				target = PREV
+				modifier = massive_commercial_relations
+			}
+		}
+		add_ideas = mdchaos_ideas_romanian_tricks
+	}
+
+	option = {
+		name = mdchaos_ideas.17.b
+
+		set_temp_variable = { treasury_change = -25.00 }
+		modify_treasury_effect = yes
+		ROM = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = insult
+			}
+			set_temp_variable = { treasury_change = 25.00 }
+			modify_treasury_effect = yes
+		}
+		custom_effect_tooltip = mdchaos_ideas.17_tt
+	}
+}

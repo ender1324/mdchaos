@@ -98,5 +98,12 @@ mdchaos_ideas_event = {
 		1 = { country_event = mdchaos_ideas.8 }
 		1 = { country_event = mdchaos_ideas.9 }
 		1 = { country_event = mdchaos_ideas.10 }
+		1 = { country_event = mdchaos_ideas.11 }
+		1 = { country_event = mdchaos_ideas.12 }
+		1 = { country_event = mdchaos_ideas.13 }
+		1 = { country_event = mdchaos_ideas.14 }
+		1 = { country_event = mdchaos_ideas.15 }
+		1 = { country_event = mdchaos_ideas.16 }
+		1 = { country_event = mdchaos_ideas.17 }
 	}
 }
