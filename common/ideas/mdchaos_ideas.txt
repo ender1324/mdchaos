@@ -87,7 +87,7 @@ ideas = {
 				experience_loss_factor = 0.5
 			}
 		}
-		mdchaos_speed_steroids = {
+		mdchaos_strength_steroids = {
 			allowed = {
 				always = yes
 			}

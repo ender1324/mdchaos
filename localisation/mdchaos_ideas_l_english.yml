@@ -92,3 +92,15 @@
  mdchaos_ideas.17_tt: "§RThe delegates will borrow their fair share of travelling costs.§!"
  mdchaos_ideas_romanian_tricks: "Romanian Tricks"
  mdchaos_ideas_romanian_tricks_desc: "The armed forces of this country has been taught the way of the dracula."
+
+ mdchaos_ideas.18.title: "[ROOT.GetLeader] embraces corruption"
+ mdchaos_ideas.18.desc: "[ROOT.GetLeader] has increasingly used unfair methods in politics to pass the laws he likes. This has caused corruption in the country to become an every day occurance..."
+ mdchaos_ideas.18.a: "This must be stopped."
+
+ mdchaos_ideas.19.title: "[ROOT.GetLeader] fights corruption"
+ mdchaos_ideas.19.desc: "[ROOT.GetLeader] has invested into anti-corruption organizations and has managed to eradicate a bunch of corruption from our country. We will benefit greatly from this."
+ mdchaos_ideas.19.a: "This must be encouraged!"
+
+ mdchaos_ideas.20.title: "Budget cuts!"
+ mdchaos_ideas.20.desc: "[ROOT.GetLeader] has introduced massive budget cuts to all services!"
+ mdchaos_ideas.20.a: "How will the people respond to this?"

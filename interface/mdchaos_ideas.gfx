@@ -20,7 +20,7 @@ spriteTypes = {
 		textureFile = "gfx/mdchaos_ideas/expensive.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_mdchaos_chatgpt_science"
+		name = "GFX_idea_mdchaos_ideas_chatgpt_science"
 		textureFile = "gfx/mdchaos_ideas/voting_for_robert.dds"
 	}
 	spriteType = {

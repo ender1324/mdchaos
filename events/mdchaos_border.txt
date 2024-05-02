@@ -1695,3 +1695,50 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_border.29
+	title = mdchaos_border.29.title
+	desc = mdchaos_border.29.desc
+
+	picture = GFX_carrier
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.29.a
+
+		BAH = {
+			transfer_state = 1008
+			add_state_core = 1008
+		}
+
+		COM = {
+			transfer_state = 940
+		}
+
+		KUW = {
+			transfer_state = 488
+		}
+
+		BHR = {
+			transfer_state = 624
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.30
+	title = mdchaos_border.30.title
+	desc = mdchaos_border.30.desc
+
+	picture = GFX_sikh_rally
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.30.a
+
+		SIK = {
+			transfer_state = 982
+		}
+	}
+}

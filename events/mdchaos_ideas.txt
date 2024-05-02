@@ -380,3 +380,54 @@ country_event = {
 		custom_effect_tooltip = mdchaos_ideas.17_tt
 	}
 }
+
+country_event = {
+	id = mdchaos_ideas.18
+	title = mdchaos_ideas.18.title
+	desc = mdchaos_ideas.18.desc
+
+	picture = GFX_fbk_gotcha
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.18.a
+
+		increase_corruption = yes
+		add_country_leader_trait = corruptible
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.19
+	title = mdchaos_ideas.19.title
+	desc = mdchaos_ideas.19.desc
+
+	picture = GFX_bashnya_kremlya_liberaly
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.19.a
+		
+		decrease_corruption = yes
+		add_country_leader_trait = political_dancer
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.20
+	title = mdchaos_ideas.20.title
+	desc = mdchaos_ideas.20.desc
+
+	picture = GFX_bridge_nicoll_broke
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.20.a
+
+		decrease_centralization = yes
+		decrease_social_spending = yes
+		decrease_education_budget = yes
+		decrease_healthcare_budget = yes
+		decrease_policing_budget = yes
+	}
+}

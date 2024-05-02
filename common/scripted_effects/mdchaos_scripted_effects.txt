@@ -64,6 +64,8 @@ mdchaos_border_event = {
 		1 = { country_event = mdchaos_border.26 }
 		1 = { country_event = mdchaos_border.27 }
 		1 = { country_event = mdchaos_border.28 }
+		1 = { country_event = mdchaos_border.29 }
+		1 = { country_event = mdchaos_border.30 }
 	}
 }
 
@@ -105,5 +107,8 @@ mdchaos_ideas_event = {
 		1 = { country_event = mdchaos_ideas.15 }
 		1 = { country_event = mdchaos_ideas.16 }
 		1 = { country_event = mdchaos_ideas.17 }
+		1 = { country_event = mdchaos_ideas.18 }
+		1 = { country_event = mdchaos_ideas.19 }
+		1 = { country_event = mdchaos_ideas.20 }
 	}
 }
