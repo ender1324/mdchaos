@@ -1,0 +1,32 @@
+defined_text = {
+	name = GetMDChaosIdeaStatus
+	text = {
+		trigger = { has_country_flag = mdchaos_ideas_disabled }
+		localization_key = "Disabled"
+	}
+	text = {
+		localization_key = "Enabled"
+	}
+}
+
+defined_text = {
+	name = GetMDChaosBorderStatus
+	text = {
+		trigger = { has_country_flag = mdchaos_border_disabled }
+		localization_key = "Disabled"
+	}
+	text = {
+		localization_key = "Enabled"
+	}
+}
+
+defined_text = {
+	name = GetMDChaosWarStatus
+	text = {
+		trigger = { has_country_flag = mdchaos_war_disabled }
+		localization_key = "Disabled"
+	}
+	text = {
+		localization_key = "Enabled"
+	}
+}

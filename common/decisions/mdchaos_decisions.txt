@@ -3,26 +3,77 @@ mdchaos_category = {
 		available = {
 			is_ai = yes
 		}
+		activation = {
+			always = no
+		}
 		is_good = no
 		days_mission_timeout = mdchaos_time
 		fixed_random_seed = no
 
 		timeout_effect = {
-			random_list = {
-				40 = {
-					mdchaos_harmless_event = yes
-				}
-				30 = {
-					mdchaos_ideas_event = yes
-				}
-				20 = {
-					mdchaos_border_event = yes
-				}
-				10 = {
-					mdchaos_war_event = yes
+			hidden_effect = {
+				random_list = {
+					40 = {
+						mdchaos_harmless_event = yes
+					}
+					30 = {
+						modifier = { factor = 0 has_country_flag = mdchaos_ideas_disabled }
+						mdchaos_ideas_event = yes
+					}
+					20 = {
+						modifier = { factor = 0 has_country_flag = mdchaos_border_disabled }
+						mdchaos_border_event = yes
+					}
+					10 = {
+						modifier = { factor = 0 has_country_flag = mdchaos_war_disabled }
+						mdchaos_war_event = yes
+					}
 				}
 			}
 			activate_mission = mdchaos_incoming
+		}
+	}
+
+	mdchaos_random_incoming = {
+		available = {
+			is_ai = yes
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = mdchaos_time
+		fixed_random_seed = no
+
+		timeout_effect = {
+			hidden_effect = {
+				mdchaos_random_event = yes
+			}
+			activate_mission = mdchaos_random_incoming
+		}
+	}
+
+	mdchaos_random_event = {
+		available = {
+			is_ai = no
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				mdchaos_random_event = yes
+			}
+		}
+	}
+
+	mdchaos_setup = {
+		available = {
+			is_ai = no
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				country_event = mdchaos.1
+			}
 		}
 	}
 }

@@ -117,3 +117,111 @@ mdchaos_ideas_event = {
 		1 = { country_event = mdchaos_ideas.22 }
 	}
 }
+
+mdchaos_random_event = {
+	random_list = {
+		1 = { country_event = mdchaos_harmless.1 }
+		1 = { country_event = mdchaos_harmless.2 }
+		1 = { country_event = mdchaos_harmless.3 }
+		1 = { country_event = mdchaos_harmless.4 }
+		1 = { country_event = mdchaos_harmless.5 }
+		1 = { country_event = mdchaos_harmless.6 }
+		1 = { country_event = mdchaos_harmless.7 }
+		1 = { country_event = mdchaos_harmless.8 }
+		1 = { country_event = mdchaos_harmless.9 }
+		1 = { country_event = mdchaos_harmless.10 }
+		1 = { country_event = mdchaos_harmless.11 }
+		1 = { country_event = mdchaos_harmless.12 }
+		1 = { country_event = mdchaos_harmless.13 }
+		1 = { country_event = mdchaos_harmless.14 }
+		1 = { country_event = mdchaos_harmless.15 }
+		1 = { country_event = mdchaos_harmless.16 }
+		1 = { country_event = mdchaos_harmless.17 }
+		1 = { country_event = mdchaos_harmless.18 }
+		1 = { country_event = mdchaos_harmless.19 }
+		1 = { country_event = mdchaos_harmless.20 }
+		1 = { country_event = mdchaos_harmless.21 }
+		1 = { country_event = mdchaos_harmless.22 }
+		1 = { country_event = mdchaos_harmless.23 }
+		1 = { country_event = mdchaos_harmless.24 }
+		1 = { country_event = mdchaos_harmless.25 }
+		1 = { country_event = mdchaos_harmless.26 }
+		1 = { country_event = mdchaos_harmless.27 }
+		1 = { country_event = mdchaos_harmless.28 }
+		1 = { country_event = mdchaos_harmless.29 }
+		1 = { country_event = mdchaos_harmless.30 }
+		1 = { country_event = mdchaos_harmless.31 }
+		
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_border_1_happened } country_event = mdchaos_border.1 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_border_2_happened } country_event = mdchaos_border.2 }
+		1 = { country_event = mdchaos_border.3 }
+		1 = { country_event = mdchaos_border.4 }
+		1 = { country_event = mdchaos_border.5 }
+		1 = { country_event = mdchaos_border.6 }
+		1 = { country_event = mdchaos_border.7 }
+		1 = { country_event = mdchaos_border.8 }
+		1 = { country_event = mdchaos_border.9 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_border_10_happened } country_event = mdchaos_border.10 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_border_11_happened } country_event = mdchaos_border.11 }
+		1 = { country_event = mdchaos_border.12 }
+		1 = { country_event = mdchaos_border.13 }
+		1 = { country_event = mdchaos_border.14 }
+		1 = { country_event = mdchaos_border.15 }
+		1 = { country_event = mdchaos_border.16 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_border_17_happened } country_event = mdchaos_border.17 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_border_18_happened } country_event = mdchaos_border.18 }
+		1 = { country_event = mdchaos_border.19 }
+		1 = { country_event = mdchaos_border.20 }
+		1 = { country_event = mdchaos_border.21 }
+		1 = { country_event = mdchaos_border.22 }
+		1 = { country_event = mdchaos_border.23 }
+		1 = { country_event = mdchaos_border.24 }
+		1 = { country_event = mdchaos_border.25 }
+		1 = { country_event = mdchaos_border.26 }
+		1 = { country_event = mdchaos_border.27 }
+		1 = { country_event = mdchaos_border.28 }
+		1 = { country_event = mdchaos_border.29 }
+		1 = { country_event = mdchaos_border.30 }
+
+		1 = { country_event = mdchaos_war.1 }
+		1 = { country_event = mdchaos_war.2 }
+		1 = { country_event = mdchaos_war.3 }
+		1 = { country_event = mdchaos_war.4 }
+		1 = { country_event = mdchaos_war.5 }
+		1 = { country_event = mdchaos_war.6 }
+		1 = { country_event = mdchaos_war.7 }
+		1 = { country_event = mdchaos_war.8 }
+		1 = { country_event = mdchaos_war.9 }
+		1 = { country_event = mdchaos_war.10 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_11_happened } country_event = mdchaos_war.11 }
+		1 = { country_event = mdchaos_war.12 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_13_happened } country_event = mdchaos_war.13 }
+		1 = { country_event = mdchaos_war.14 }
+		1 = { country_event = mdchaos_war.15 }
+		1 = { country_event = mdchaos_war.16 }
+		1 = { country_event = mdchaos_war.17 }
+
+		1 = { country_event = mdchaos_ideas.1 }
+		1 = { country_event = mdchaos_ideas.2 }
+		1 = { country_event = mdchaos_ideas.3 }
+		1 = { country_event = mdchaos_ideas.4 }
+		1 = { country_event = mdchaos_ideas.5 }
+		1 = { country_event = mdchaos_ideas.6 }
+		1 = { country_event = mdchaos_ideas.7 }
+		1 = { country_event = mdchaos_ideas.8 }
+		1 = { country_event = mdchaos_ideas.9 }
+		1 = { country_event = mdchaos_ideas.10 }
+		1 = { country_event = mdchaos_ideas.11 }
+		1 = { country_event = mdchaos_ideas.12 }
+		1 = { country_event = mdchaos_ideas.13 }
+		1 = { country_event = mdchaos_ideas.14 }
+		1 = { country_event = mdchaos_ideas.15 }
+		1 = { country_event = mdchaos_ideas.16 }
+		1 = { country_event = mdchaos_ideas.17 }
+		1 = { country_event = mdchaos_ideas.18 }
+		1 = { country_event = mdchaos_ideas.19 }
+		1 = { country_event = mdchaos_ideas.20 }
+		1 = { country_event = mdchaos_ideas.21 }
+		1 = { country_event = mdchaos_ideas.22 }
+	}
+}

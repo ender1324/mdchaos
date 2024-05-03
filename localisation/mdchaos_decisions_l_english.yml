@@ -1,2 +1,6 @@
 ﻿l_english:
- mdchaos_incoming: "Chaos incoming"
+ mdchaos_category: "Millennium Dawn: Chaos"
+ mdchaos_incoming: "Chaos incoming..."
+ mdchaos_random_incoming: "Chaos incoming..."
+ mdchaos_random_event: "Trigger random event"
+ mdchaos_setup: "Go to setup"

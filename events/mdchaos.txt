@@ -12,37 +12,109 @@ country_event = {
         country_event = mdchaos.2
     }
 	option = {
-        name = mdchaos.1.b
+		name = mdchaos.1.b
+		country_event = mdchaos.3
+	}
+	option = {
+        name = mdchaos.1.c
 		remove_mission = mdchaos_incoming
+		remove_mission = mdchaos_random_incoming
 		activate_mission = mdchaos_incoming
     }
+
+	option = {
+		name = mdchaos.1.d
+		custom_effect_tooltip = mdchaos.1.d_tt
+		remove_mission = mdchaos_incoming
+		remove_mission = mdchaos_random_incoming
+		activate_mission = mdchaos_random_incoming
+	}
 }
 
 country_event = {
 	id = mdchaos.2
 	title = mdchaos.2.t
-	desc = mdchaos.2.d
+	desc = mdchaos.2.desc
 
 	is_triggered_only = yes
 
 	option = {
 		name = mdchaos.2.a
-		set_variable = { mdchaos_time = 30 }
+		set_variable = { mdchaos_time = 14 }
 		remove_mission = mdchaos_incoming
+		remove_mission = mdchaos_random_incoming
 		country_event = mdchaos.1
 	}
 
 	option = {
 		name = mdchaos.2.b
-		set_variable = { mdchaos_time = 72 }
+		set_variable = { mdchaos_time = 31 }
 		remove_mission = mdchaos_incoming
+		remove_mission = mdchaos_random_incoming
 		country_event = mdchaos.1
 	}
 
 	option = {
 		name = mdchaos.2.c
-		set_variable = { mdchaos_time = 14 }
+		set_variable = { mdchaos_time = 72 }
 		remove_mission = mdchaos_incoming
+		remove_mission = mdchaos_random_incoming
+		country_event = mdchaos.1
+	}
+}
+
+country_event = {
+	id = mdchaos.3
+	title = mdchaos.3.t
+	desc = mdchaos.3.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos.3.a
+		custom_effect_tooltip = mdchaos.3.a_tt
+		if = {
+			limit = { has_country_flag = mdchaos_ideas_disabled }
+			clr_country_flag = mdchaos_ideas_disabled
+			country_event = mdchaos.3
+		}
+		else = {
+			set_country_flag = mdchaos_ideas_disabled
+			country_event = mdchaos.3
+		}
+	}
+
+	option = {
+		name = mdchaos.3.b
+		custom_effect_tooltip = mdchaos.3.b_tt
+		if = {
+			limit = { has_country_flag = mdchaos_border_disabled }
+			clr_country_flag = mdchaos_border_disabled
+			country_event = mdchaos.3
+		}
+		else = {
+			set_country_flag = mdchaos_border_disabled
+			country_event = mdchaos.3
+		}
+	}
+
+	option = {
+		name = mdchaos.3.c
+		custom_effect_tooltip = mdchaos.3.c_tt
+		if = {
+			limit = { has_country_flag = mdchaos_war_disabled }
+			clr_country_flag = mdchaos_war_disabled
+			country_event = mdchaos.3
+		}
+		else = {
+			set_country_flag = mdchaos_war_disabled
+			country_event = mdchaos.3
+		}
+	}
+
+	option = {
+		name = mdchaos.3.d
+
 		country_event = mdchaos.1
 	}
 }
