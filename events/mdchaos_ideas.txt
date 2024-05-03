@@ -431,3 +431,52 @@ country_event = {
 		decrease_policing_budget = yes
 	}
 }
+
+country_event = {
+	id = mdchaos_ideas.21
+	title = mdchaos_ideas.21.title
+	desc = mdchaos_ideas.21.desc
+
+	picture = GFX_internal_faction_money
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.21.a
+
+		add_timed_idea = {
+			idea = mdchaos_ideas_productivity_printer
+			days = 31
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.22
+	title = mdchaos_ideas.22.title
+	desc = mdchaos_ideas.22.desc
+
+	picture = GFX_bashnya_kremlya_techncrats
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.22.a
+
+		set_temp_variable = { treasury_change = -100.00 }
+		modify_treasury_effect = yes
+
+		add_timed_idea = {
+			idea = mdchaos_ideas_swiss_economist
+			days = 31
+		}
+		custom_effect_tooltip = mdchaos_ideas.22.a_tt
+	}
+
+	option = {
+		name = mdchaos_ideas.22.b
+
+		add_timed_idea = {
+			idea = mdchaos_venezuelan_economist
+			days = 14
+		}
+	}
+}

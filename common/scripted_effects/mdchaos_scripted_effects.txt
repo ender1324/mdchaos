@@ -85,6 +85,9 @@ mdchaos_war_event = {
 		1 = { country_event = mdchaos_war.12 }
 		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_13_happened } country_event = mdchaos_war.13 }
 		1 = { country_event = mdchaos_war.14 }
+		1 = { country_event = mdchaos_war.15 }
+		1 = { country_event = mdchaos_war.16 }
+		1 = { country_event = mdchaos_war.17 }
 	}
 }
 
@@ -110,5 +113,7 @@ mdchaos_ideas_event = {
 		1 = { country_event = mdchaos_ideas.18 }
 		1 = { country_event = mdchaos_ideas.19 }
 		1 = { country_event = mdchaos_ideas.20 }
+		1 = { country_event = mdchaos_ideas.21 }
+		1 = { country_event = mdchaos_ideas.22 }
 	}
 }

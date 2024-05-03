@@ -104,3 +104,17 @@
  mdchaos_ideas.20.title: "Budget cuts!"
  mdchaos_ideas.20.desc: "[ROOT.GetLeader] has introduced massive budget cuts to all services!"
  mdchaos_ideas.20.a: "How will the people respond to this?"
+
+ mdchaos_ideas.21.title: "Productivty Printer found"
+ mdchaos_ideas.21.desc: "The millennium dawn matrix has been broken and we have found a printer which can increase our productivity in the... game"
+ mdchaos_ideas.21.a: "Wait are we living in a simulation?"
+ mdchaos_ideas_productivity_printer: "Productivity Printer"
+ mdchaos_ideas_productivity_printer_desc: "A printer which can break the 4th wall and add productivity to the game has been found."
+
+ mdchaos_ideas.22.title: "Swiss economist hired in our country"
+ mdchaos_ideas.22.desc: "A swiss economist was recommended by one of our investors. This will put a temporary strain on our budget but will pay off greatly if we utilize his abilities properly."
+ mdchaos_ideas.22.a: "He is the right choice."
+ mdchaos_ideas.22.a_tt: "The swiss economist will greatly reduce the cost of investments and increase their returns greatly. Make use of that by using the investments GUI."
+ mdchaos_ideas.22.b: "...we cant afford that"
+ mdchaos_ideas_swiss_economist: "Swiss Economist"
+ mdchaos_ideas_swiss_economist_desc: "This country has hired a Swiss economist and is reaping the benefits."

@@ -753,3 +753,98 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_war.16
+	title = mdchaos_war.16.title
+	desc = mdchaos_war.16.desc
+
+	picture = GFX_albacountryevent
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.16.a
+
+		every_country = {
+			limit = { any_owned_state = { is_core_of = FGU } }
+			release = FGU
+			add_state_core = 67
+			create_wargoal = {
+				target = FGU
+				type = take_core_state
+			}
+		}
+		SUR = {
+			every_state = {
+				limit = { is_core_of = GUY }
+				add_core_of = SUR
+			}
+			every_state = {
+				limit = { is_core_of = FGU }
+				add_core_of = SUR
+			}
+			declare_war_on = {
+				target = GUY
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = FGU
+				type = annex_everything
+			}
+		}
+		GUY = {
+			every_state = {
+				limit = { is_core_of = SUR }
+				add_core_of = GUY
+			}
+			every_state = {
+				limit = { is_core_of = FGU }
+				add_core_of = GUY
+			}
+			declare_war_on = {
+				target = FGU
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.17
+	title = mdchaos_war.17.title
+	desc = mdchaos_war.17.desc
+
+	picture = GFX_venez_carac
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.17.a
+		trigger = { GUY = { is_ai = yes } }
+		GUY = {
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 1005
+			}
+			VEN = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+				add_state_core = 1005
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_war.17.a
+		trigger = { GUY = { is_ai = no } }
+
+		GUY = {
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 1005
+			}
+		}
+	}
+}

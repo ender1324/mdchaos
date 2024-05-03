@@ -43,4 +43,12 @@ spriteTypes = {
 		name = "GFX_idea_mdchaos_ideas_romanian_tricks"
 		textureFile = "gfx/mdchaos_ideas/chest_out_of_brass.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_ideas_swiss_economist"
+		textureFile = "gfx/mdchaos_ideas/swiss_building.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_ideas_productivity_printer"
+		textureFile = "gfx/mdchaos_ideas/printing_money.dds"
+	}
 }
