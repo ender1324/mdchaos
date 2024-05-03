@@ -10,9 +10,9 @@ country_event = {
 
 	option = {
 		name = mdchaos_war.1.a
-		PAK = {
+		CHI = {
 			diplomatic_relation = {
-				country = CHI
+				country = PAK
 				relation = guarantee
 				active = no
 			}
