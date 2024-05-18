@@ -41,5 +41,67 @@ ideas = {
 				can_join_factions = no
 			}
 		}
+
+		mdchaos_war_tenth_crusade_HLS = {
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				stability_weekly = -0.01
+				war_support_weekly = 0.01
+				personnel_cost_multiplier_modifier = -0.5
+				weekly_manpower = 1500
+				industrial_factory_donations = 5
+				military_factory_donations = 10
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.6
+				justify_war_goal_time = -0.5
+			}
+		}
+
+		mdchaos_war_tenth_crusade_ITA = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = nationalist
+			}
+
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.2
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				stability_weekly = 0.01
+				war_support_factor = 0.15
+				weekly_manpower = 500
+				autonomy_gain = -0.5
+				cic_to_overlord_factor = 0.9
+				mic_to_overlord_factor = 0.9
+			}
+		}
+
+		mdchaos_war_fighting_holyness_ITA = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = nationalist }
+			}
+
+			modifier = {
+				stability_factor = 0.5
+				war_stability_factor = 0.5
+				dig_in_speed_factor = 0.5
+				org_loss_when_moving = -0.5
+			}
+		}
 	}
 }

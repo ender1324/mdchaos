@@ -8,4 +8,19 @@ spriteTypes = {
 		name = "GFX_idea_mdchaos_fourth_reich_ARG"
 		textureFile = "gfx/mdchaos_war/mdchaos_fourth_reich_ARG.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_mdchaos_war_tenth_crusade_HLS"
+		textureFile = "gfx/mdchaos_war/idea_HLS_the_tenth_crusade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mdchaos_war_tenth_crusade_ITA"
+		textureFile = "gfx/mdchaos_war/idea_ITA_the_tenth_crusade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mdchaos_war_fighting_holyness_ITA"
+		textureFile = "gfx/mdchaos_war/idea_ITA_fighting_holyness.dds"
+	}
 }

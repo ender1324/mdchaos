@@ -644,7 +644,13 @@ country_event = {
 		random_country = {
 			random_other_country = {
 				leave_faction = yes
-				create_faction = president_faction_name
+				meta_effect = {
+					text = {
+					  create_faction = "[COUNTRY_1]-[COUNTRY_2] Alliance"
+					}
+					COUNTRY_1 = "[THIS.GetAdjective]"
+					COUNTRY_2 = "[PREV.GetAdjective]"
+				}
 				add_to_faction = PREV
 			}
 		}
@@ -844,6 +850,160 @@ country_event = {
 				type = oil
 				amount = 12
 				state = 1005
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.18
+	title = mdchaos_war.18.title
+	desc = mdchaos_war.18.desc
+
+	picture = GFX_report_event_Italy
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.18.a
+		trigger = { ITA = { is_ai = yes } }
+
+		HLS = {
+			add_ideas = mdchaos_war_tenth_crusade_HLS
+			add_manpower = 150000
+			transfer_state = 81
+			add_state_core = 81
+			division_template = {
+				name = "Modern Crusaders"
+				regiments = {
+					Mech_Inf_Bat = { x = 0 y = 0 }
+					Mech_Inf_Bat = { x = 0 y = 1 }
+					Mech_Inf_Bat = { x = 0 y = 2 }
+					Mech_Inf_Bat = { x = 1 y = 0 }
+					Mech_Inf_Bat = { x = 1 y = 1 }
+					Mech_Inf_Bat = { x = 1 y = 2 }
+					Mech_Inf_Bat = { x = 2 y = 0 }
+					Mech_Inf_Bat = { x = 2 y = 1 }
+					Mech_Inf_Bat = { x = 2 y = 2 }
+					Sp_Arty_Bat = { x = 0 y = 3 }
+					Sp_Arty_Bat = { x = 1 y = 3 }
+					Sp_Arty_Bat = { x = 2 y = 3 }
+				}
+
+				support = {
+					Arty_Battery = { x = 0 y = 0 }
+					L_Engi_Comp = { x = 0 y = 1 }
+					L_Recce_Comp = { x = 0 y = 2 }
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Modern Crusaders\" division_template = \"Modern Crusaders\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = HLS
+					count = 64
+				}
+			}
+			ITA = {
+				set_capital = {
+					state = 80
+				}
+				start_civil_war = {
+					ideology = nationalist
+					size = 0.6
+					states = {
+						82 957 956 83
+					}
+					PREV = {
+						add_ideas = mdchaos_war_fighting_holyness_ITA
+					}
+					add_ideas = mdchaos_war_tenth_crusade_ITA
+					HLS = {
+						set_autonomy = {
+							target = PREV
+							autonomous_state = autonomy_autonomous_state
+							end_wars = no
+							end_civil_wars = no
+						}
+					}
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					OR = {
+						has_idea = christian
+						has_idea = orthodox_christian
+						has_idea = uniate_church
+					}
+				}
+			}
+			HLS = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_war.18.a
+		trigger = { ITA = { is_ai = no } }
+
+		HLS = {
+			add_ideas = mdchaos_war_tenth_crusade_HLS
+			add_manpower = 150000
+			add_state_core = 81
+			division_template = {
+				name = "Modern Crusaders"
+				regiments = {
+					Mech_Inf_Bat = { x = 0 y = 0 }
+					Mech_Inf_Bat = { x = 0 y = 1 }
+					Mech_Inf_Bat = { x = 0 y = 2 }
+					Mech_Inf_Bat = { x = 1 y = 0 }
+					Mech_Inf_Bat = { x = 1 y = 1 }
+					Mech_Inf_Bat = { x = 1 y = 2 }
+					Mech_Inf_Bat = { x = 2 y = 0 }
+					Mech_Inf_Bat = { x = 2 y = 1 }
+					Mech_Inf_Bat = { x = 2 y = 2 }
+					Sp_Arty_Bat = { x = 0 y = 3 }
+					Sp_Arty_Bat = { x = 1 y = 3 }
+					Sp_Arty_Bat = { x = 2 y = 3 }
+				}
+
+				support = {
+					Arty_Battery = { x = 0 y = 0 }
+					L_Engi_Comp = { x = 0 y = 1 }
+					L_Recce_Comp = { x = 0 y = 2 }
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Modern Crusaders\" division_template = \"Modern Crusaders\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = HLS
+					count = 64
+				}
+			}
+		}
+
+		every_country = {
+			limit = {
+				OR = {
+					NOT = {
+						OR = {
+							has_idea = christian
+							has_idea = orthodox_christian
+							has_idea = uniate_church
+						}
+					}
+					tag = ITA
+				}
+			}
+			HLS = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
 			}
 		}
 	}
