@@ -140,3 +140,11 @@
  mdchaos_harmless.31.title: "Dentist office opens in [ENG.GetNameDef]"
  mdchaos_harmless.31.desc: "The first event dentist opens in [ENG.GetNameDef]! This will have unexpected consequences for the [ENG.GetAdjective] as such technology has never been seen before on those cursed Isles."
  mdchaos_harmless.31.a: "Hopefully he doesnt get exiled..."
+
+ mdchaos_harmless.32.title: "Identity Crisis"
+ mdchaos_harmless.32.desc: "Our country has began having a identity crisis. The rebranding process has already started."
+ mdchaos_harmless.32.a: "It was just meant to be"
+
+ mdchaos_harmless.33.title: "[ROOT.GetLeader] has found a cheat code"
+ mdchaos_harmless.33.desc: "[ROOT.GetLeader] has reportedly typed out HESOYAM on the matrix keyboard and $250B appeared in the country's treasury."
+ mdchaos_harmless.33.a: "Great!"

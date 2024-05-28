@@ -1129,3 +1129,41 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_harmless.32
+	title = mdchaos_harmless.32.title
+	desc = mdchaos_harmless.32.desc
+
+	picture = GFX_debates_arm
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_harmless.32.a
+		random_country = {
+			set_temp_variable = { random_country_ctag = THIS }
+			ROOT = {
+				meta_effect = {
+					text = { set_cosmetic_tag = [thetag] }
+					thetag = "[PREV.GetTag]"
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_harmless.33
+	title = mdchaos_harmless.33.title
+	desc = mdchaos_harmless.33.desc
+
+	is_triggered_only = yes
+	picture = GFX_report_event_Money_ITA_2
+
+	option = {
+		name = mdchaos_harmless.33.a
+		add_stability = 0.05
+		set_temp_variable = { treasury_change = 250.00 }
+		modify_treasury_effect = yes
+	}
+}

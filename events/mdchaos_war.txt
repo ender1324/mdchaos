@@ -944,6 +944,7 @@ country_event = {
 				}
 			}
 		}
+		set_country_flag = mdchaos_war_18_happened
 	}
 
 	option = {

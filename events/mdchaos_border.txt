@@ -1742,3 +1742,160 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_border.31
+	title = mdchaos_border.31.title
+	desc = mdchaos_border.31.desc
+
+	picture = GFX_arab_spring_defection
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.31.a
+		trigger = {
+			# all_country = { limit = { is_in_the_middle_east = yes NOT = { tag = EGY } } is_ai = yes }
+			### ^^^ WHY THE FUCK DOES THIS NOT WORK
+			NOT = {
+				any_country = {
+					is_in_the_middle_east = yes
+					NOT = { tag = EGY }
+					is_ai = no
+				}
+			}
+		}
+		EGY = {
+			complete_national_focus = EGY_pan_arab_effort
+			# set_cosmetic_tag = UAR
+			# clr_country_flag = flag_update_required
+			JOR = {
+				every_core_state = {
+					add_core_of = EGY
+				}
+			}
+			annex_country = {
+				target = JOR
+				transfer_troops = yes
+			}
+			PAL = {
+				every_core_state = {
+					add_core_of = EGY
+				}
+			}
+			annex_country = {
+				target = PAL
+				transfer_troops = yes
+			}
+			SYR = {
+				every_core_state = {
+					add_core_of = EGY
+				}
+			}
+			annex_country = {
+				target = SYR
+				transfer_troops = yes
+			}
+			IRQ = {
+				every_core_state = {
+					add_core_of = EGY
+				}
+			}
+			annex_country = {
+				target = IRQ
+				transfer_troops = yes
+			}
+			declare_war_on = {
+				target = ISR
+				type = annex_everything
+			}
+		}
+		# create the wargoals
+		every_country = {
+			limit = { is_in_the_middle_east = yes }
+			every_core_state = {
+				add_core_of = EGY
+			}
+			EGY = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+		LBA = {
+			every_core_state = {
+				add_core_of = EGY
+			}
+			EGY = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+		SUD = {
+			every_core_state = {
+				add_core_of = EGY
+			}
+			EGY = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+		set_country_flag = mdchaos_border_31_happened
+	}
+
+	option = {
+		name = mdchaos_border.31.a
+		trigger = {
+			any_country = {
+				is_in_the_middle_east = yes
+				NOT = { tag = EGY }
+				is_ai = no
+			}
+		}
+
+		EGY = {
+			complete_national_focus = EGY_pan_arab_effort
+			set_cosmetic_tag = UAR
+			clr_country_flag = flag_update_required
+		}
+		# create the wargoals
+		every_country = {
+			limit = { is_in_the_middle_east = yes }
+			every_core_state = {
+				add_core_of = EGY
+			}
+			EGY = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+		LBA = {
+			every_core_state = {
+				add_core_of = EGY
+			}
+			EGY = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+		SUD = {
+			every_core_state = {
+				add_core_of = EGY
+			}
+			EGY = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
