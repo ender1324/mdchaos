@@ -82,3 +82,12 @@
  mdchaos_war_tenth_crusade_ITA_desc: "In the face of doubt and division, we stand resolute, rallying to the sacred call of His Holiness. This is our divine duty, a holy mission ordained by the Almighty Himself. The Tenth Crusade is not just a battle for land, but for the very soul of our nation and faith. We are the chosen, the righteous few who answer the call to arms, defending the sanctity of our heritage against the tides of atheism and disbelief.\n\nWith every prayer whispered and every sword raised, we march forward with unyielding conviction. The Pope's banner flies high, a beacon of hope and a symbol of our unbreakable spirit. We fight not just for the Holy Land, but for the future of Christendom. Italy’s soil may be stained with the blood of brothers, but it will be consecrated by our unwavering faith. Victory is our destiny, for we are the defenders of the faith, chosen by God to triumph in this holy endeavor."
  mdchaos_war_fighting_holyness_ITA: "Fighting the insanity"
  mdchaos_war_fighting_holyness_ITA_desc: "Have these people gone insane? After seemingly a day like no other, the pope has decided to call for a TENTH CRUSADE? We can't let our republic go out like this. We fight to uphold the principles of freedom, progress, and unity. The streets may run red with the blood of civil war, but our cause is just. We will not allow our beloved country to be swallowed by anachronistic fervor and religious extremism."
+
+ mdchaos_war.19.title: "Random country demands we demilitirize border regions"
+ mdchaos_war.19.desc: "A random country has demanded we demilitize and withdraw all troops from their border regions. They threaten war if we do not accept. What shall we do?"
+ mdchaos_war.19.a: "We have no choice."
+ mdchaos_war.19.b: "Tell them to come if they dare."
+
+ mdchaos_war.20.title: "Second Chaco War"
+ mdchaos_war.20.desc: "Today in a desperate gamble to regain popular support Bolivia has announced the beginning of a second chaco war to recover the long disputed region between Bolivia and Paraguay."
+ mdchaos_war.20.a: "Pointless warmongering!"

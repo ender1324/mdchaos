@@ -35,6 +35,8 @@ ideas = {
 				industrial_capacity_dockyard = 0.6
 				justify_war_goal_time = -0.5
 				naval_invasion_capacity = 50
+				# try to fix hitler not building divisions
+				ai_desired_divisions_factor = 10000
 			}
 			rule = {
 				can_create_factions = yes

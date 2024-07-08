@@ -148,3 +148,7 @@
  mdchaos_harmless.33.title: "[ROOT.GetLeader] has found a cheat code"
  mdchaos_harmless.33.desc: "[ROOT.GetLeader] has reportedly typed out HESOYAM on the matrix keyboard and $250B appeared in the country's treasury."
  mdchaos_harmless.33.a: "Great!"
+
+ mdchaos_harmless.34.title: "Oil ends in a random state"
+ mdchaos_harmless.34.desc: "Unfortunately, oil reserves have ended in a random states. The effects of this remain to be seen for the host country."
+ mdchaos_harmless.34.a: "Unfortunate"

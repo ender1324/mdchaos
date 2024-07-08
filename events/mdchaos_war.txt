@@ -923,6 +923,11 @@ country_event = {
 							end_wars = no
 							end_civil_wars = no
 						}
+						add_to_war = {
+							targeted_alliance = PREV
+							enemy = ITA
+							hostility_reason = asked_to_join
+						}
 					}
 				}
 			}
@@ -1007,5 +1012,83 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.19
+	title = mdchaos_war.19.title
+	desc = mdchaos_war.19.desc
+
+	picture = GFX_2008_protest_podav
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.19.a
+		random_neighbor_country = {
+			every_owned_state = {
+				every_neighbor_state = {
+					limit = { is_owned_by = ROOT }
+					set_demilitarized_zone = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_war.19.b
+		random_neighbor_country = {
+			create_wargoal = {
+				target = ROOT
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_war.20
+	title = mdchaos_war.20.title
+	desc = mdchaos_war.20.desc
+
+	picture = GFX_2008_protest_podav
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.20.a
+		trigger = { PAR = { is_ai = yes } }
+		BOL = {
+			add_state_core = 896
+			declare_war_on = {
+				target = PAR
+				type = take_core_state
+				generator = { 896 }
+			}
+		}
+		PAR = {
+			add_state_core = 899
+			add_state_claim = 898
+		}
+		set_country_flag = mdchaos_war_20_happened
+	}
+
+	option = {
+		name = mdchaos_war.20.a
+		trigger = {
+			PAR = { is_ai = no }
+		}
+		BOL = {
+			add_state_core = 896
+			create_wargoal = {
+				target = PAR
+				type = take_core_state
+				generator = { 896 } 
+			}
+		}
+		PAR = {
+			add_state_core = 899
+			add_state_claim = 898
+		}
+		set_country_flag = mdchaos_war_20_happened
 	}
 }

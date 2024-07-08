@@ -1167,3 +1167,25 @@ country_event = {
 		modify_treasury_effect = yes
 	}
 }
+
+country_event = {
+	id = mdchaos_harmless.34
+	title = mdchaos_harmless.34.title
+	desc = mdchaos_harmless.34.desc
+
+	is_triggered_only = yes
+	picture = GFX_trump_sad
+
+	option = {
+		name = mdchaos_harmless.34.a
+		random_state = {
+			limit = {
+				oil > 0
+			}
+			add_resource = {
+				type = oil
+				amount = -999
+			}
+		}
+	}
+}

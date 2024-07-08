@@ -1899,3 +1899,26 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_border.32
+	title = mdchaos_border.32.title
+	desc = mdchaos_border.32.desc
+
+	picture = GFX_castroeventcuba
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.32.a
+		trigger = { CUB = { is_ai = yes } }
+		CUB = {
+			transfer_state = 424
+		}
+		USA = {
+			transfer_state = 855
+			transfer_state = 1121
+			transfer_state = 854
+		}
+		set_country_flag = mdchaos_border_32_happened
+	}
+}
