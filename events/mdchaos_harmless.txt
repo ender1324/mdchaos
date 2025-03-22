@@ -157,46 +157,51 @@ country_event = {
 		set_temp_variable = { treasury_change = -1000.00 }
 		modify_treasury_effect = yes
 		set_technology = {
+			ballistic_missile = 1
 			ICBM = 1
 			ICBM1 = 1
 			ICBM2 = 1
 			ICBM3 = 1
 			ICBM4 = 1
 			ICBM5 = 1
-			nuclear_warhead_0 = 1
-			nuclear_warhead_1 = 1
-			nuclear_warhead_2 = 1
-			nuclear_warhead_3 = 1
-			nuclear_warhead_4 = 1
-			nuclear_warhead_5 = 1
-			nuclear_warhead_6 = 1
-			nuclear_warhead_7 = 1
-			nuclear_warhead_8 = 1
-			nuclear_warhead_9 = 1
-			nuclear_warhead_10 = 1
+			ICBM6 = 1
+			ICBM7 = 1
+			ICBM8 = 1
+			nuclear_technology = 1
+			reactor1 = 1
+			reactor2 = 1
+			reactor3 = 1
+			reactor4 = 1
+			reactor5 = 1
 		}
-		add_to_variable = { nuclear_warhead_inventory_array^9 = 100 }
-		add_to_array = { nuclear_doctrine_array = 6 }
-		add_to_array = { nuclear_status_array = 3 }
-		add_to_array = { nuclear_status_array = 9 }
-		set_nuclear_status_special_effect = yes
-		set_nuke_arrays_selected_TAG = yes
-		update_nuclear_deterrence = yes
-		set_temp_variable = { missile_type = 1 }
-		set_temp_variable = { missile_index = 15 }
-		set_temp_variable = { missile_count = 100 }
-		modify_missile_inventory_count = yes
+		complete_special_project = sp:sp_missile_project
+		complete_special_project = sp:sp_nuclear_warhead_program
+		add_ideas = {
+			nuclear_power_off
+			full_first_use
+		}
+		add_equipment_to_stockpile = {
+			type = nuclear_missile_equipment_8
+			amount = 1000
+			producer = SOV
+		}
+		capital_scope = {
+			set_building_level = {
+				type = rocket_site
+				level = 2
+				instant_build = yes
+			}
+			set_building_level = {
+				type = nuclear_reactor
+				level = 5
+				instant_build = yes
+			}
+		}
+		# Increase russian influence by 10% (scaled by modifiers)
 		set_temp_variable = { percent_change = 10 }
 		set_temp_variable = { tag_index = SOV }
 		set_temp_variable = { influence_target = ROOT }
 		change_influence_percentage = yes
-		capital_scope = {
-			set_building_level = {
-				type = missile_silo
-				level = 2
-				instant_build = yes
-			}
-		}
 		custom_effect_tooltip = mdchaos_harmless.3.b_tt
 	}
 	option = {
@@ -920,6 +925,13 @@ country_event = {
 			state = 50
 			controller = BEL
 			use_nuke = no
+			nuke_type = thermonuclear_bomb
+		}
+		50 = {
+			add_dynamic_modifier = {
+				modifier = nuclear_fallout
+				days = 365
+			}
 		}
 	}
 }
@@ -944,9 +956,14 @@ country_event = {
 					launch_nuke = {
 						state = PREV
 						use_nuke = no
+						nuke_type = nuclear_bomb
 					}
 					set_temp_variable = { treasury_change = -1.00 }
 					modify_treasury_effect = yes
+				}
+				add_dynamic_modifier = {
+					modifier = nuclear_fallout
+					days = 90
 				}
 			}
 			random_owned_controlled_state = {

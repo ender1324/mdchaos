@@ -1,4 +1,4 @@
-version="1.3"
+version="1.4"
 tags={
 	"Alternative History"
 	"Events"
@@ -8,5 +8,5 @@ dependencies={
 }
 picture="thumbnail.png"
 name="Millennium Dawn: Chaos Mod"
-supported_version="1.14.*"
+supported_version="1.16.*"
 remote_file_id="3238896822"
