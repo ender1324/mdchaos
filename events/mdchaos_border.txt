@@ -84,6 +84,17 @@ country_event = {
 			transfer_state = 650
 			transfer_state = 646
 			transfer_state = 647
+			# new states
+			transfer_state = 1189 # moscow oblas
+			transfer_state = 1187 # vladimir
+			transfer_state = 1186 # ivanovo
+			transfer_state = 1180 # tambov
+			transfer_state = 1172 # belgorod
+			transfer_state = 1181 # kaluga
+			transfer_state = 1188 # tula
+			transfer_state = 1173 # orel
+			transfer_state = 1174 # bryanks
+
 			GER = {
 				puppet = PREV
 			}
@@ -108,22 +119,93 @@ country_event = {
 			add_state_core = 643
 			add_state_core = 1128
 		}
+		# Poland gets kaliningrad
+		POL = {
+			transfer_state = 642
+		}
+		# jewish and transbaikal to china
+		1070 = {
+			transfer_state_to = CHI
+		}
+		1068 = {
+			transfer_state_to = CHI
+		}
 		SOV = {
 			release = KLM
+			KLM = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = KOM
+			KOM = {
+				transfer_state = 683
+				add_state_core = 683
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = BSH
+			BSH = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = UDM
+			UDM = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = MEL
+			MEL = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = CHU
+			CHU = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = KHM
+			KHM = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = YAM
+			YAM = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = ALT
+			ALT = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = KHS
+			KHS = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = TUV
+			TUV = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = BRY
 			BRY = {
 				transfer_state = 685
 				add_state_core = 685
+				every_core_state = {
+					add_core_of = SOV
+				}
 			}
 			release = YAK
 			YAK = {
@@ -135,8 +217,16 @@ country_event = {
 				transfer_state = 1069
 				add_state_core = 682
 				add_state_core = 1069
+				every_core_state = {
+					add_core_of = SOV
+				}
 			}
 			release = CKK
+			CKK = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = DAG
 			DAG = {
 				set_politics = {
@@ -145,10 +235,28 @@ country_event = {
 				}
 				transfer_state = 670
 				add_state_core = 670
+				every_core_state = {
+					add_core_of = SOV
+				}
 			}
 			release = ING
+			ING = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = SOO
+			SOO = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = KBK
+			KBK = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			release = ADY
 			ADY = {
 				set_politics = {
@@ -157,8 +265,16 @@ country_event = {
 				}
 				transfer_state = 1140
 				add_state_core = 1140
+				every_core_state = {
+					add_core_of = SOV
+				}
 			}
 			release = KCC
+			KCC = {
+				every_core_state = {
+					add_core_of = SOV
+				}
+			}
 			add_ideas = mdchaos_rotten_structure_sov
 			create_wargoal = {
 				target = KLM
@@ -363,6 +479,9 @@ country_event = {
 		CZE = {
 			transfer_state = 44
 			add_state_core = 44
+		}
+		USA = {
+			transfer_state = 1080
 		}
 	}
 

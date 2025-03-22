@@ -14,7 +14,7 @@
  mdchaos_harmless.3.a: "Send [SOV.GetLeader] our regards!"
  mdchaos_harmless.3.a_tt: "§GSets our debt to 0§!"
  mdchaos_harmless.3.b: "Could we get nuclear technology instead?"
- mdchaos_harmless.3.b_tt: "§RThis gives you absolutely everything needed to launch nukes (nuclear status, technology, missiles, the nukes themselves and a level 2 missile silo in your capital). Use the missile UI to lauch them.§!"
+ mdchaos_harmless.3.b_tt: "§RThis gives you absolutely everything needed to launch nukes (nuclear status, technology, missiles, the nukes themselves and a level 2 missile silo in your capital). Use the new raids system to lauch them.§!"
  mdchaos_harmless.3.c: "Tell [SOV.GetLeader] to fuck off"
 
  mdchaos_harmless.4.title: "Kanye West visits our country!"
