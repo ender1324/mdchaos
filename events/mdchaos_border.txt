@@ -682,7 +682,7 @@ country_event = {
 
 		206 = {
 			set_state_name = "New Plovdiv"
-			set_province_name = { id = 11970 name = "New Plovdiv" }
+			set_province_name = { id = 4206 name = "New Plovdiv" }
 		}
 	}
 
@@ -1133,44 +1133,418 @@ country_event = {
 		}
 
 		USA = {
-			release = CSA
-			release = LKT
-			LKT = {
+			set_country_flag = collapsed_nation
+			add_named_threat = { threat = 15 name = USA_collapse_event.5.t }
+			set_temp_variable = { debt_change = -150000 }
+			modify_debt_effect = yes
+			remove_ideas = NATO_member
+			remove_from_faction = USA
+			remove_ideas = p5_member
+			remove_ideas = g7_member
+			# # Texas
+			# TEX = {
+			# 	inherit_technology = USA
+			# 	transfer_state = 800
+			# 	add_state_core = 800
+			# 	ingame_startup_nations_effect = yes
+
+			# 	every_unit_leader = {
+			# 		limit = { has_trait = texan_soldier }
+			# 		set_nationality = TEX
+			# 	}
+			# 	transfer_units_fraction = {
+			# 		target = TEX
+			# 		size = 0.07
+			# 		keep_unit_leaders_trigger = {
+			# 			OR = {
+			# 				has_trait = loyalist_soldier
+			# 				has_trait = southern_soldier
+			# 				has_trait = midwest_soldier
+			# 				has_trait = new_yorker_soldier
+			# 				has_trait = new_england_soldier
+			# 				has_trait = great_plains_soldier
+			# 				has_trait = rocky_mountain_soldier
+			# 				has_trait = california_soldier
+			# 				has_trait = cascadian_soldier
+			# 				has_trait = puerto_rican_soldier
+			# 				has_trait = alaskan_soldier
+			# 				has_trait = pacific_islander_soldier
+			# 			}
+			# 		}
+			# 	}
+			# }
+			# Cascadia
+			CAS = {
+				inherit_technology = PREV
+				transfer_state = 808
+				transfer_state = 809
+				transfer_state = 810
+				ingame_startup_nations_effect = yes
 				add_ideas = mdchaos_border_death_usa
-				declare_war_on = {
-					target = CSA
-					type = annex_everything
+			}
+			transfer_units_fraction = {
+				target = CAS
+				size = 0.07
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_trait = loyalist_soldier
+						has_trait = southern_soldier
+						has_trait = midwest_soldier
+						has_trait = new_yorker_soldier
+						has_trait = new_england_soldier
+						has_trait = great_plains_soldier
+						has_trait = rocky_mountain_soldier
+						has_trait = california_soldier
+						has_trait = texan_soldier
+						has_trait = puerto_rican_soldier
+						has_trait = alaskan_soldier
+						has_trait = pacific_islander_soldier
+					}
 				}
 			}
-			release = GLC
-			GLC = {
-				add_ideas = mdchaos_border_death_usa
-				declare_war_on = {
-					target = CSA
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = LKT
-					type = annex_everything
+
+			# Puerto Rico
+			PTR = {
+				inherit_technology = PREV
+				transfer_state = 815
+				add_state_core = 815
+				ingame_startup_nations_effect = yes
+			}
+			every_unit_leader = {
+				limit = { has_trait = puerto_rican_soldier }
+				set_nationality = PTR
+			}
+			transfer_units_fraction = {
+				target = PTR
+				size = 0.02
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_trait = loyalist_soldier
+						has_trait = southern_soldier
+						has_trait = midwest_soldier
+						has_trait = new_yorker_soldier
+						has_trait = new_england_soldier
+						has_trait = great_plains_soldier
+						has_trait = rocky_mountain_soldier
+						has_trait = california_soldier
+						has_trait = cascadian_soldier
+						has_trait = texan_soldier
+						has_trait = alaskan_soldier
+						has_trait = pacific_islander_soldier
+					}
 				}
 			}
-			leave_faction = yes
-			delete_unit = {}
-			declare_war_on = {
+
+			# CSA
+			CSA = {
+				country_event = {
+					id = USA_collapse_event.23
+					days = 10
+				}
+				ingame_startup_nations_effect = yes
+
+				transfer_state = 792
+				transfer_state = 795
+				transfer_state = 797
+				transfer_state = 798
+				transfer_state = 790
+				transfer_state = 791
+				transfer_state = 793
+				transfer_state = 799
+				transfer_state = 794
+				transfer_state = 796
+
+				add_ideas = mdchaos_border_death_usa
+			}
+			every_unit_leader = {
+				limit = { has_trait = southern_soldier }
+				set_nationality = CSA
+			}
+			transfer_units_fraction = {
 				target = CSA
-				type = annex_everything
+				size = 0.20
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_trait = loyalist_soldier
+						has_trait = midwest_soldier
+						has_trait = new_yorker_soldier
+						has_trait = new_england_soldier
+						has_trait = great_plains_soldier
+						has_trait = rocky_mountain_soldier
+						has_trait = california_soldier
+						has_trait = cascadian_soldier
+						has_trait = texan_soldier
+						has_trait = alaskan_soldier
+						has_trait = pacific_islander_soldier
+						has_trait = puerto_rican_soldier
+					}
+				}
 			}
-			declare_war_on = {
-				target = LKT
-				type = annex_everything
+
+			# New york
+			NYK = {
+				inherit_technology = PREV
+				transfer_state = 769
+				add_state_core = 769
+				ingame_startup_nations_effect = yes
+
+				add_ideas = mdchaos_border_death_usa
 			}
-			declare_war_on = {
+			every_unit_leader = {
+				limit = { has_trait = new_yorker_soldier }
+				set_nationality = NYK
+			}
+			transfer_units_fraction = {
+				target = NYK
+				size = 0.07
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_trait = loyalist_soldier
+						has_trait = midwest_soldier
+						has_trait = new_england_soldier
+						has_trait = california_soldier
+						has_trait = great_plains_soldier
+						has_trait = rocky_mountain_soldier
+						has_trait = southern_soldier
+						has_trait = cascadian_soldier
+						has_trait = texan_soldier
+						has_trait = alaskan_soldier
+						has_trait = pacific_islander_soldier
+						has_trait = puerto_rican_soldier
+					}
+				}
+			}
+
+			# Great Lakes Confederation
+			GLC = {
+				inherit_technology = PREV
+				transfer_state = 776
+				add_state_core = 776
+				transfer_state = 778
+				add_state_core = 778
+				transfer_state = 775
+				add_state_core = 775
+				transfer_state = 782
+				add_state_core = 782
+				transfer_state = 783
+				add_state_core = 783
+				transfer_state = 777
+				add_state_core = 777
+				transfer_state = 779
+				add_state_core = 779
+				transfer_state = 780
+				add_state_core = 780
+				transfer_state = 781
+				add_state_core = 781
+				ingame_startup_nations_effect = yes
+
+				add_ideas = mdchaos_border_death_usa
+			}
+			every_unit_leader = {
+				limit = { has_trait = midwest_soldier }
+				set_nationality = GLC
+			}
+			transfer_units_fraction = {
 				target = GLC
-				type = annex_everything
+				size = 0.15
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_trait = loyalist_soldier
+						has_trait = new_yorker_soldier
+						has_trait = new_england_soldier
+						has_trait = california_soldier
+						has_trait = great_plains_soldier
+						has_trait = rocky_mountain_soldier
+						has_trait = southern_soldier
+						has_trait = cascadian_soldier
+						has_trait = texan_soldier
+						has_trait = alaskan_soldier
+						has_trait = pacific_islander_soldier
+						has_trait = puerto_rican_soldier
+					}
+				}
 			}
-			add_ideas = mdchaos_border_death_usa
-			## add the idea to the csa
-			CSA = { add_ideas = mdchaos_border_death_usa }
+
+			# Lakota
+			LKT = {
+				inherit_technology = PREV
+				transfer_state = 784
+				add_state_core = 784
+				transfer_state = 785
+				add_state_core = 785
+				transfer_state = 786
+				add_state_core = 786
+				transfer_state = 787
+				add_state_core = 787
+				transfer_state = 788
+				add_state_core = 788
+				transfer_state = 789
+				add_state_core = 789
+				ingame_startup_nations_effect = yes
+
+				add_ideas = mdchaos_border_death_usa
+			}
+			every_unit_leader = {
+				limit = { has_trait = great_plains_soldier }
+				set_nationality = LKT
+			}
+			transfer_units_fraction = {
+				target = LKT
+				size = 0.20
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_trait = loyalist_soldier
+						has_trait = new_yorker_soldier
+						has_trait = new_england_soldier
+						has_trait = california_soldier
+						has_trait = rocky_mountain_soldier
+						has_trait = midwest_soldier
+						has_trait = southern_soldier
+						has_trait = cascadian_soldier
+						has_trait = texan_soldier
+						has_trait = alaskan_soldier
+						has_trait = pacific_islander_soldier
+						has_trait = puerto_rican_soldier
+					}
+				}
+			}
+
+			# Alaska
+			ASK = {
+				inherit_technology = PREV
+				transfer_state = 814
+				add_state_core = 814
+				transfer_state = 1010
+				add_state_core = 1010
+				ingame_startup_nations_effect = yes
+				add_ideas = mdchaos_border_death_usa
+			}
+			every_unit_leader = {
+				limit = { has_trait = alaskan_soldier }
+				set_nationality = ASK
+			}
+			transfer_units_fraction = {
+				target = ASK
+				size = 0.20
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_trait = loyalist_soldier
+						has_trait = new_yorker_soldier
+						has_trait = new_england_soldier
+						has_trait = california_soldier
+						has_trait = rocky_mountain_soldier
+						has_trait = midwest_soldier
+						has_trait = southern_soldier
+						has_trait = cascadian_soldier
+						has_trait = texan_soldier
+						has_trait = great_plains_soldier
+						has_trait = pacific_islander_soldier
+						has_trait = puerto_rican_soldier
+					}
+				}
+			}
+
+			# Hawaii
+			HWI = {
+				inherit_technology = PREV
+				transfer_state = 817
+				add_state_core = 817
+				transfer_state = 822
+				add_state_core = 822
+				transfer_state = 823
+				add_state_core = 823
+				transfer_state = 825
+				add_state_core = 825
+				transfer_state = 818
+				add_state_core = 818
+				ingame_startup_nations_effect = yes
+			}
+			every_unit_leader = {
+				limit = { has_trait = pacific_islander_soldier }
+				set_nationality = HWI
+			}
+			transfer_units_fraction = {
+				target = HWI
+				size = 0.20
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_trait = loyalist_soldier
+						has_trait = new_yorker_soldier
+						has_trait = new_england_soldier
+						has_trait = california_soldier
+						has_trait = rocky_mountain_soldier
+						has_trait = midwest_soldier
+						has_trait = southern_soldier
+						has_trait = cascadian_soldier
+						has_trait = texan_soldier
+						has_trait = great_plains_soldier
+						has_trait = alaskan_soldier
+						has_trait = puerto_rican_soldier
+					}
+				}
+			}
+			
+			# NEW AMERICAA
+			1182 = {
+				transfer_state_to = USB
+			}
+			every_unit_leader = {
+				limit = { has_trait = loyalist_soldier }
+				set_nationality = USB
+			}
+			transfer_units_fraction = {
+				target = USB
+				size = 1.00
+				keep_unit_leaders_trigger = {
+					OR = {
+						has_trait = pacific_islander_soldier
+						has_trait = new_yorker_soldier
+						has_trait = new_england_soldier
+						has_trait = california_soldier
+						has_trait = rocky_mountain_soldier
+						has_trait = midwest_soldier
+						has_trait = southern_soldier
+						has_trait = cascadian_soldier
+						has_trait = texan_soldier
+						has_trait = great_plains_soldier
+						has_trait = alaskan_soldier
+						has_trait = puerto_rican_soldier
+					}
+				}
+			}
+			every_owned_state = {
+				transfer_state_to = USB
+				add_core_of = USB
+			}
+			USB = {
+				inherit_technology = PREV
+				ingame_startup_nations_effect = yes
+				country_event = {
+					id = USA_collapse_event.19
+					days = 3
+				}
+
+				add_ideas = mdchaos_border_death_usa
+			}
+		}
+
+		SAM = {
+			transfer_state = 826
+		}
+		MIC = {
+			transfer_state = 818
+		}
+		ENG = {
+			transfer_state = 824
+		}
+		CUB = {
+			transfer_state = 424
+		}
+		BHR = {
+			transfer_state = 624
+		}
+		KUW = {
+			transfer_state = 488
 		}
 
 		MEX = {
@@ -1193,7 +1567,6 @@ country_event = {
 		CAN = {
 			transfer_state = 814
 			transfer_state = 765
-			transfer_state = 809
 			transfer_state = 764
 			transfer_state = 765
 			transfer_state = 766
@@ -1207,6 +1580,39 @@ country_event = {
 			add_state_core = 767
 			add_state_core = 1084
 			add_state_core = 768
+		}
+		# war declaration shit
+		USB = {
+			declare_war_on = {
+				target = NYK
+				type = annex_everything
+			}
+		}
+		CSA = {
+			declare_war_on = {
+				target = USB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NYK
+				type = annex_everything
+			}
+		}
+		GLC = {
+			declare_war_on = {
+				target = LKT
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CAS
+				type = annex_everything
+			}
+		}
+		LKT = {
+			declare_war_on = {
+				target = CAS
+				type = annex_everything
+			}
 		}
 		set_country_flag = mdchaos_border_11_happened
 	}
