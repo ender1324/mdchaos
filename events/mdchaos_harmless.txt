@@ -1206,3 +1206,60 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_harmless.35
+	title = mdchaos_harmless.35.title
+	desc = mdchaos_harmless.35.desc
+
+	is_triggered_only = yes
+	picture = GFX_trump_sad
+
+	option = {
+		name = mdchaos_harmless.35.a
+
+		add_political_power = -10
+
+		random_country = {
+			limit = { has_government = democratic }
+
+			ROOT = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = insult
+				}
+			}
+		}
+	}
+
+	option = {
+		name = mdchaos_harmless.35.b
+
+		add_political_power = -50
+
+		random_country = {
+			limit = { has_government = democratic }
+
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = imminent_danger_to_national_security
+			}
+
+			create_corps_commander = {
+				name = "Adolf Hitler"
+				picture = "GFX_Adolf_Hitler"
+				traits = { trickster brilliant_strategist }
+				skill = 6
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 7
+				logistics_skill = 1
+			}
+
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.05
+			}
+		}
+	}
+}

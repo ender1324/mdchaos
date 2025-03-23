@@ -158,5 +158,43 @@ ideas = {
 				resource_export_multiplier_modifier = 0.1
 			}
 		}
+
+		mdchaos_ideas_anti_globalist_alliance = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			modifier = {
+				political_power_gain = 0.1
+				ideology_drift_defence = 0.1
+				trade_opinion_factor = -0.15
+				return_on_investment_modifier = -0.02
+				interest_rate_multiplier_modifier = 1
+				resource_export_multiplier_modifier = -0.1
+				foreign_influence_defense_modifier = 0.25
+				expected_healthcare_modifier = -1
+				expected_welfare_modifier = -1
+			}
+		}
+
+		mdchaos_ideas_tarrifs = {
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				population_tax_income_multiplier_modifier = 0.05
+				corporate_tax_income_multiplier_modifier = 0.02
+				agriculture_tax_modifier = 0.1
+				trade_laws_cost_factor = 0.5
+				expected_welfare_modifier = 1
+			}
+		}
 	}
 }

@@ -34,6 +34,7 @@ mdchaos_harmless_event = {
 		1 = { country_event = mdchaos_harmless.32 }
 		1 = { country_event = mdchaos_harmless.33 }
 		1 = { country_event = mdchaos_harmless.34 }
+		1 = { country_event = mdchaos_harmless.35 }
 	}
 }
 
@@ -129,6 +130,10 @@ mdchaos_ideas_event = {
 		1 = { country_event = mdchaos_ideas.20 }
 		1 = { country_event = mdchaos_ideas.21 }
 		1 = { country_event = mdchaos_ideas.22 }
+		1 = { country_event = mdchaos_ideas.23 }
+		1 = { country_event = mdchaos_ideas.24 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_ideas_25_happened} country_event = mdchaos_ideas.25 }
+		1 = { country_event = mdchaos_ideas.26 }
 	}
 }
 
@@ -168,6 +173,7 @@ mdchaos_random_event = {
 		1 = { country_event = mdchaos_harmless.32 }
 		1 = { country_event = mdchaos_harmless.33 }
 		1 = { country_event = mdchaos_harmless.34 }
+		1 = { country_event = mdchaos_harmless.35 }
 		
 		1 = { modifier = { factor = 0 has_country_flag = mdchaos_border_1_happened } country_event = mdchaos_border.1 }
 		1 = { modifier = { factor = 0 has_country_flag = mdchaos_border_2_happened } country_event = mdchaos_border.2 }
@@ -225,6 +231,9 @@ mdchaos_random_event = {
 		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_18_happened } country_event = mdchaos_war.18 }
 		1 = { country_event = mdchaos_war.19 }
 		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_20_happened } country_event = mdchaos_war.20 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_21_happened } country_event = mdchaos_war.21 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_22_happened } country_event = mdchaos_war.22 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_23_happened } country_event = mdchaos_war.23 }
 
 		1 = { country_event = mdchaos_ideas.1 }
 		1 = { country_event = mdchaos_ideas.2 }
@@ -248,5 +257,9 @@ mdchaos_random_event = {
 		1 = { country_event = mdchaos_ideas.20 }
 		1 = { country_event = mdchaos_ideas.21 }
 		1 = { country_event = mdchaos_ideas.22 }
+		1 = { country_event = mdchaos_ideas.23 }
+		1 = { country_event = mdchaos_ideas.24 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_ideas_25_happened } country_event = mdchaos_ideas.25 }
+		1 = { country_event = mdchaos_ideas.26 }
 	}
 }

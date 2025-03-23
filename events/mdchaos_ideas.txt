@@ -483,3 +483,144 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mdchaos_ideas.23
+	title = mdchaos_ideas.23.title
+	desc = mdchaos_ideas.23.desc
+
+	picture = GFX_pkk_ambush_lose
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.23.a
+
+		add_stability = -0.05
+		add_ideas = child_soldiers
+		add_to_variable = { child_soldiers = 10000 }
+		random_character = {
+			limit = { is_army_leader = yes }
+			retire = yes
+		}
+		random_character = {
+			limit = { is_army_leader = yes }
+			retire = yes
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.24
+	title = mdchaos_ideas.24.title
+	desc = mdchaos_ideas.24.desc
+
+	picture = GFX_special_forces
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.24.a
+
+		add_timed_idea = {
+			idea = foreign_military_advisors3
+			days = 356
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.25
+	title = mdchaos_ideas.25.title
+	desc = mdchaos_ideas.25.desc
+
+	picture = GFX_czub_building
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_ideas.25.a
+
+		every_country = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = gratitude
+			}
+		}
+		add_ideas = p5_member
+	}
+
+	option = {
+		name = mdchaos_ideas.25.b
+		every_country = {
+			limit = {
+				NOT = { has_government = fascism } 
+				NOT = { has_government = nationalist }
+				NOT = {
+					tag = NKO
+				}
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = violated_territorial_sovereignty
+			}
+		}
+
+		add_ideas = Lacks_International_Recognition
+
+		create_faction = "Anti-Globalist Alliance"
+		add_ideas = mdchaos_ideas_anti_globalist_alliance
+		every_country = {
+			limit = {
+				OR = {
+					has_government = fascism
+					has_government = nationalist
+					tag = NKO
+				}
+			}
+
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = recognises_us
+			}
+			add_ideas = mdchaos_ideas_anti_globalist_alliance
+
+			ROOT = {
+				add_to_faction = PREV
+			}
+
+			custom_effect_tooltip = mdchaos_ideas.25.b_tt
+		}
+		set_country_flag = mdchaos_ideas_25_happened
+	}
+}
+
+country_event = {
+	id = mdchaos_ideas.26
+	title = mdchaos_ideas.26.title
+	desc = mdchaos_ideas.26.desc
+
+	is_triggered_only = yes
+	picture = GFX_trump_sad
+
+	option = {
+		name = mdchaos_ideas.26.a
+
+		set_temp_variable = { temp_opinion = 15 }
+		change_industrial_conglomerates_opinion = yes
+		set_temp_variable = { temp_opinion = -10 }
+		change_small_medium_business_owners_opinion = yes
+
+		set_exports_to_max = yes
+	}
+
+	option = {
+		name = mdchaos_ideas.26.b
+
+		set_temp_variable = { temp_opinion = -10 }
+		change_industrial_conglomerates_opinion = yes
+		set_temp_variable = { temp_opinion = 15 }
+		change_small_medium_business_owners_opinion = yes
+
+		add_ideas = mdchaos_ideas_tarrifs
+		decrease_two_level_economic_growth = yes
+		decrease_exports = yes
+	}
+}

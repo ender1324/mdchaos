@@ -51,4 +51,14 @@ spriteTypes = {
 		name = "GFX_idea_mdchaos_ideas_productivity_printer"
 		textureFile = "gfx/mdchaos_ideas/printing_money.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_mdchaos_ideas_anti_globalist_alliance"
+		textureFile = "gfx/mdchaos_ideas/anti_globalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mdchaos_ideas_tarrifs"
+		textureFile = "gfx/mdchaos_ideas/tarrifs.dds"
+	}
 }

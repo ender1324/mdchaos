@@ -118,3 +118,26 @@
  mdchaos_ideas.22.b: "...we cant afford that"
  mdchaos_ideas_swiss_economist: "Swiss Economist"
  mdchaos_ideas_swiss_economist_desc: "This country has hired a Swiss economist and is reaping the benefits."
+
+ mdchaos_ideas.23.title: "Child soldeiers found in our army!"
+ mdchaos_ideas.23.desc: "Today while the army inspection was happening, a ton of child soldiers were found in the army. Several of our generals have been arrested for this and a full investigation is happening."
+ mdchaos_ideas.23.a: "This is a war crime!"
+
+ mdchaos_ideas.24.title: "USA sends us military advisors"
+ mdchaos_ideas.24.desc: "The USA has sent us military advisors to help us in our war efforts. This will greatly increase our military capabilities."
+ mdchaos_ideas.24.a: "Thank you USA!"
+
+ mdchaos_ideas.25.title: "The UN offers us a permanent seat at the security council"
+ mdchaos_ideas.25.desc: "We have been offered a permanent seat at the security council by the UN for unknown reasons. Shall we accept this offer?"
+ mdchaos_ideas.25.a: "This is a great honor."
+ mdchaos_ideas.25.b: "We do not recognize this false organization."
+ mdchaos_ideas_anti_globalist_alliance: "Anti-Globalist Alliance"
+ mdchaos_ideas_anti_globalist_alliance_desc: "This country has dedicated its existance to countering the globalist influence of the west and its allies. The UN and other global cooperation organizations are not recognized by this country and refuse to work with them."
+ mdchaos_ideas.25.b_tt: "§RThis will create a faction with all anti-globalist allies around the world.§!"
+
+ mdchaos_ideas.26.title: "People are not buying local produce!"
+ mdchaos_ideas.26.desc: "The local population has stopped buying our local productions for cheaper foreign replacements. How shall we proceed?"
+ mdchaos_ideas.26.a: "Embrace free trade"
+ mdchaos_ideas.26.b: "Apply heavy tarrifs on the import of their goods"
+ mdchaos_ideas_tarrifs: "Import Tarrifs"
+ mdchaos_ideas_tarrifs: "Multiple tarrifs have been applied on the imports of foreign cheap products to stimulate protectionism and local markets at the cost of increased prices for the consumers."
