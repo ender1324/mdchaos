@@ -2290,6 +2290,12 @@ country_event = {
 			}
 		}
 		EGY = {
+			set_temp_variable = { rul_party_temp = 21 }
+			change_ruling_party_effect = yes
+			set_politics = {
+    			ruling_party = nationalist
+    			elections_allowed = no
+			}
 			complete_national_focus = EGY_pan_arab_effort
 			# set_cosmetic_tag = UAR
 			# clr_country_flag = flag_update_required
@@ -2383,9 +2389,15 @@ country_event = {
 		}
 
 		EGY = {
+			#set_temp_variable = { change_leader_temp = 0 }
+			set_temp_variable = { rul_party_temp = 21 }
+			change_ruling_party_effect = yes
+			set_politics = {
+    			ruling_party = nationalist
+    			elections_allowed = no
+			}
 			complete_national_focus = EGY_pan_arab_effort
-			set_cosmetic_tag = UAR
-			clr_country_flag = flag_update_required
+			#clr_country_flag = flag_update_required
 		}
 		# create the wargoals
 		every_country = {
@@ -2445,5 +2457,162 @@ country_event = {
 			transfer_state = 854
 		}
 		set_country_flag = mdchaos_border_32_happened
+	}
+}
+
+country_event = {
+	id = mdchaos_border.33
+	title = mdchaos_border.33.title
+	desc = mdchaos_border.33.desc
+
+	picture = GFX_indian_pakistan_unite
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.33.a
+
+		RAJ = {
+			annex_country = {
+				target = PAK
+				transfer_troops = yes
+			}
+
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RAJ
+						is_core_of = PAK
+						is_core_of = NEP
+						is_core_of = NPM
+						is_core_of = BHU
+						is_core_of = BAN
+						is_core_of = SRI
+					} 
+				}
+				add_core_of = PREV
+				controller = {
+					RAJ = {
+						create_wargoal = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+
+		set_country_flag = mdchaos_border_33_happened
+	}
+
+	option = {
+		name = mdchaos_border.33.b
+
+		PAK = {
+			annex_country = {
+				target = RAJ
+				transfer_troops = yes
+			}
+
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RAJ
+						is_core_of = PAK
+						is_core_of = NEP
+						is_core_of = NPM
+						is_core_of = BHU
+						is_core_of = BAN
+						is_core_of = SRI
+					} 
+				}
+				add_core_of = PREV
+				controller = {
+					PAK = {
+						create_wargoal = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+		set_country_flag = mdchaos_border_33_happened
+	}
+}
+
+country_event = {
+	id = mdchaos_border.34
+	title = mdchaos_border.34.title
+	desc = mdchaos_border.34.desc
+
+	picture = GFX_HKG_protest_event_balance
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.34.a
+
+		CHI = {
+			release = TIB
+		}
+	}
+
+	option = {
+		name = mdchaos_border.34.b
+		CHI = {
+			release = ETK
+		}
+	}
+}
+
+country_event = {
+	id = mdchaos_border.35
+	title = mdchaos_border.35.title
+	desc = mdchaos_border.35.desc
+
+	picture = GFX_china_ccecc
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_border.35.a
+
+		475 = {
+			transfer_state_to = RAJ
+			add_core_of = RAJ
+			remove_claim_by = CHI
+		}
+	}
+
+	option = {
+		name = mdchaos_border.35.b
+
+		475 = {
+			transfer_state_to = CHI
+			add_core_of = CHI
+			remove_claim_by = CHI
+			remove_claim_by = RAJ
+			remove_core_of = RAJ
+		}
+	}
+
+	option = {
+		name = mdchaos_border.35.c
+
+		475 = {
+			transfer_state_to = TIB
+			add_core_of = TIB
+			remove_claim_by = CHI
+			remove_claim_by = RAJ
+		}
+	}
+
+	option = {
+		name = mdchaos_border.35.d
+
+		475 = {
+			transfer_state_to = BHU
+			add_core_of = BHU
+			remove_claim_by = CHI
+			remove_claim_by = RAJ
+		}
 	}
 }

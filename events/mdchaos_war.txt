@@ -169,6 +169,10 @@ country_event = {
 			add_state_core = 934
 			add_state_core = 155
 			add_state_core = 156
+			TUR = {
+				add_state_core = 974 # west thrace
+				add_state_core = 143 # west algean islands
+			}
 			declare_war_on = {
 				target = TUR
 				type = annex_everything
@@ -186,6 +190,21 @@ country_event = {
 		}
 
 		SOV = {
+			EST = {
+				every_core_state = {
+					add_claim_by = SOV
+				}
+			}
+			LAT = {
+				every_core_state = {
+					add_claim_by = SOV
+				}
+			}
+			LIT = {
+				every_core_state = {
+					add_claim_by = SOV
+				}
+			}
 			create_wargoal = {
 				target = EST
 				type = annex_everything
