@@ -23,4 +23,8 @@ spriteTypes = {
 		name = "GFX_idea_mdchaos_war_fighting_holyness_ITA"
 		textureFile = "gfx/mdchaos_war/idea_ITA_fighting_holyness.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_mdchaos_war_malian_restoration_MAL"
+		textureFile = "gfx/mdchaos_war/idea_MAL_malian_restoration.dds"
+	}
 }

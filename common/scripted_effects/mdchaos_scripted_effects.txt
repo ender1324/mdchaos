@@ -99,6 +99,9 @@ mdchaos_war_event = {
 		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_18_happened } country_event = mdchaos_war.18 }
 		1 = { country_event = mdchaos_war.19 }
 		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_20_happened } country_event = mdchaos_war.20 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_21_happened } country_event = mdchaos_war.21 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_22_happened } country_event = mdchaos_war.22 }
+		1 = { modifier = { factor = 0 has_country_flag = mdchaos_war_23_happened } country_event = mdchaos_war.23 }
 	}
 }
 

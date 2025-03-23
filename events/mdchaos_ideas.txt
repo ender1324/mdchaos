@@ -90,6 +90,9 @@ country_event = {
 			}
 			20 = {
 				set_cosmetic_tag = BOS
+				clr_country_flag = flag_update_required
+				clr_country_flag = dynamic_flag
+				clr_country_flag = dynamic_rebel_flag
 				add_country_leader_trait = Architect_of_Bosnian_Independence
 			}
 			20 = {

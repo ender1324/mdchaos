@@ -91,3 +91,20 @@
  mdchaos_war.20.title: "Second Chaco War"
  mdchaos_war.20.desc: "Today in a desperate gamble to regain popular support Bolivia has announced the beginning of a second chaco war to recover the long disputed region between Bolivia and Paraguay."
  mdchaos_war.20.a: "Pointless warmongering!"
+
+ mdchaos_war.21.title: "The United States of America has demanded Denmark cedes Greenland"
+ mdchaos_war.21.desc: "The United States of America has sent an ultimatum to Denmark demanding that they cede Greenland to the United States. The Danish government is in chaos and the people are in uproar. What will come of this?"
+ mdchaos_war.21.a: "This is madness!"
+
+ mdchaos_war.22.title: "Gulf War 2: ELECTRIC BOOGALOO"
+ mdchaos_war.22.desc: " "
+ mdchaos_war.22.a: "The oil barons are at it again"
+
+ mdchaos_war.23.title: "Imperial coup in Mali!"
+ mdchaos_war.23.desc: "With the turmoil surrounding the west african country of Mali, the Malian government has been overthrown by a group of imperial restorationists. The new government has declared ambitions to unify west africa and eventually the entire continent, as well as to take revenge on the \"european overlords\"."
+ mdchaos_war.23.a: "What neo-colonialism does to a country..."
+ MAL_west_africa: "West African Empire"
+ MAL_west_africa_DEF: "the West African Empire"
+ MAL_west_africa_ADJ: "West African"
+ mdchaos_war_malian_restoration_MAL: "The Imperial Restoration"
+ mdchaos_war_malian_restoration_MAL_desc: "The fires of nationalism burn bright, igniting the hearts of our people with a fervent desire to see the empire rise once more from the ashes of colonialism. The old corrupt politicians have been swept aside, replaced by a new order, one that seeks to restore the glory of the past for the betterment of the african people. If we are to succeed, we must unite the tribes and nations of the west african region under our banner, forging a new empire that will stand the test of time."

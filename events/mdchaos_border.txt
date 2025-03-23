@@ -931,6 +931,9 @@ country_event = {
 				transfer_troops = yes
 			}
 			set_cosmetic_tag = CZS
+			clr_country_flag = flag_update_required
+			clr_country_flag = dynamic_flag
+			clr_country_flag = dynamic_rebel_flag
 		}
 	}
 
@@ -952,6 +955,9 @@ country_event = {
 				transfer_troops = yes
 			}
 			set_cosmetic_tag = CZS
+			clr_country_flag = flag_update_required
+			clr_country_flag = dynamic_flag
+			clr_country_flag = dynamic_rebel_flag
 		}
 	}
 }
@@ -2297,8 +2303,9 @@ country_event = {
     			elections_allowed = no
 			}
 			complete_national_focus = EGY_pan_arab_effort
-			# set_cosmetic_tag = UAR
-			# clr_country_flag = flag_update_required
+			clr_country_flag = flag_update_required
+			clr_country_flag = dynamic_flag
+			clr_country_flag = dynamic_rebel_flag
 			JOR = {
 				every_core_state = {
 					add_core_of = EGY
@@ -2397,7 +2404,9 @@ country_event = {
     			elections_allowed = no
 			}
 			complete_national_focus = EGY_pan_arab_effort
-			#clr_country_flag = flag_update_required
+			clr_country_flag = flag_update_required
+			clr_country_flag = dynamic_flag
+			clr_country_flag = dynamic_rebel_flag
 		}
 		# create the wargoals
 		every_country = {

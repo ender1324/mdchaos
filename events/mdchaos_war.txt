@@ -410,9 +410,17 @@ country_event = {
 				}
 			}
 			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = dockyard
+					level = 10
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 20
+					level = 30
 					instant_build = yes
 				}
 			}
@@ -441,10 +449,9 @@ country_event = {
 				days = 361
 			}
 			# prevent flag change
-			remove_decision = Autocracy_flag
-			remove_decision = Reset_flag
-			remove_decision = Special_flag
-			remove_decision = add_dynamic_flag
+			clr_country_flag = flag_update_required
+			clr_country_flag = dynamic_flag
+			clr_country_flag = dynamic_rebel_flag
 		}
 	}
 }
@@ -1109,5 +1116,229 @@ country_event = {
 			add_state_claim = 898
 		}
 		set_country_flag = mdchaos_war_20_happened
+	}
+}
+
+country_event = {
+	id = mdchaos_war.21
+	title = mdchaos_war.21.title
+	desc = mdchaos_war.21.desc
+
+	picture = GFX_battleship_event_USA
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.21.a
+
+		USA = {
+			add_state_claim = 1161
+			add_state_claim = 1162
+			add_state_claim = 1
+		}
+		
+		random_list = {
+			33 = {
+				1161 = {
+					transfer_state_to = USA
+					add_core_of = USA
+					add_resource = {
+						type = oil
+						amount = 6
+					}
+					add_resource = {
+						type = chromium
+						amount = 6
+					}
+				}
+				1 = {
+					transfer_state_to = USA
+				}
+			}
+			33 = {
+				1161 = {
+					transfer_state_to = USA
+					add_resource = {
+						type = oil
+						amount = 6
+					}
+					add_resource = {
+						type = chromium
+						amount = 6
+					}
+				}
+				1162 = {
+					transfer_state_to = USA
+					add_resource = {
+						type = chromium
+						amount = 3
+					}
+				}
+				1 = {
+					transfer_state_to = USA
+				}
+				DEN = {
+					add_opinion_modifier = {
+						target = USA
+						modifier = rival
+					}
+				}
+				ICE = {
+					add_opinion_modifier = {
+						target = USA
+						modifier = imminent_danger_to_national_security
+					}
+				}
+			}
+			33 = {
+				USA = {
+					declare_war_on = {
+						target = DEN
+						type = take_state
+						#generator = { 1161  1162  1 } 
+					}
+				}
+			}
+		}
+		set_country_flag = mdchaos_war_21_happened
+	}
+}
+
+country_event = {
+	id = mdchaos_war.22
+	title = mdchaos_war.22.title
+	desc = mdchaos_war.22.desc
+
+	picture = GFX_iraq_war3
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.22.a
+		
+		UAE = {
+			leave_faction = yes
+			declare_war_on = {
+				target = QAT
+				type = annex_everything
+			}
+
+			declare_war_on = {
+				target = BHR
+				type = annex_everything
+			}
+
+			declare_war_on = {
+				target = KUW
+				type = annex_everything
+			}
+		}
+
+		KUW = {
+			leave_faction = yes
+			declare_war_on = {
+				target = QAT
+				type = annex_everything
+			}
+
+			declare_war_on = {
+				target = BHR
+				type = annex_everything
+			}
+		}
+
+		QAT = {
+			leave_faction = yes
+			declare_war_on = {
+				target = BHR
+				type = annex_everything
+			}
+		}
+
+		set_country_flag = mdchaos_war_22_happened
+	}
+}
+
+country_event = {
+	id = mdchaos_war.23
+	title = mdchaos_war.23.title
+	desc = mdchaos_war.23.desc
+
+	picture = GFX_malian_coup
+	is_triggered_only = yes
+
+	option = {
+		name = mdchaos_war.23.a
+
+		MAL = {
+			set_temp_variable = { rul_party_temp = 23 }
+			change_ruling_party_effect = yes
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+	
+			complete_national_focus = AFRICAN_UNION_shared_focus
+			set_cosmetic_tag = MAL_west_africa
+			clr_country_flag = flag_update_required
+			clr_country_flag = dynamic_flag
+			clr_country_flag = dynamic_rebel_flag
+	
+			add_ideas = mdchaos_war_malian_restoration_MAL
+
+			division_template = {
+				name = "Imperial Guards"
+				regiments = {
+					Mech_Inf_Bat = { x = 0 y = 0 }
+					Mech_Inf_Bat = { x = 0 y = 1 }
+					Mech_Inf_Bat = { x = 0 y = 2 }
+					Mech_Inf_Bat = { x = 1 y = 0 }
+					Mech_Inf_Bat = { x = 1 y = 1 }
+					Mech_Inf_Bat = { x = 1 y = 2 }
+					Mech_Inf_Bat = { x = 2 y = 0 }
+					Mech_Inf_Bat = { x = 2 y = 1 }
+					Mech_Inf_Bat = { x = 2 y = 2 }
+					Sp_Arty_Bat = { x = 0 y = 3 }
+					Sp_Arty_Bat = { x = 1 y = 3 }
+					Sp_Arty_Bat = { x = 2 y = 3 }
+				}
+
+				support = {
+					Arty_Battery = { x = 0 y = 0 }
+					L_Engi_Comp = { x = 0 y = 1 }
+					L_Recce_Comp = { x = 0 y = 2 }
+				}
+			}
+
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Imperial Guards\" division_template = \"Imperial Guards\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = MAL
+					count = 35
+				}
+			}
+
+			every_other_country = {
+				limit = {
+					is_african_nation = yes
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+					}
+					add_core_of = PREV.PREV
+				}
+
+				MAL = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+		set_country_flag = mdchaos_war_23_happened
 	}
 }
